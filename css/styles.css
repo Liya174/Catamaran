@@ -1,0 +1,225 @@
+@font-face {
+    src: url("../fonts/Raleway.ttf");
+    font-family: "Raleway";
+}
+
+@font-face {
+    src: url("../fonts/Roboto.ttf");
+    font-family: "Roboto";
+}
+
+a,
+a:hover,
+a:visited {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+body {
+    margin: 0;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+body * {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1120px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.button {
+    background: #012435;
+    height: 60px;
+    border-radius: 60px;
+    border: none;
+    padding: 12px 0;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.hero {
+    height: 650px;
+    padding: 10px;
+    background-color: #012435;
+    color: #FFFFFF;
+}
+
+.hero-background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: no-repeat center/cover url('../imgs/hero_bg_1.jpg');
+}
+
+.hero-background::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(217, 217, 217, 0.45);
+    border-radius: 20px; 
+    z-index: 0;
+}
+
+.hero-container {
+    position: relative;
+    padding: 30px 0;
+    height: 630px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hero-header {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.hero-header__first {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 160px 1fr 175px;
+    align-items: center;
+}
+.hero-header__first__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 15px;
+}
+.hero-header__first__logo-name {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+}
+.hero-header__first__logo-company {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.18em;
+}
+.hero-header__first__nav {
+    max-width: 455px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero-header__first__nav-link {
+    padding: 0 10px;
+    flex-shrink: 0;
+}
+.hero-header__first__left {
+    width: 100%;
+    margin-left: auto;
+    padding-right: 10px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+.hero-header__first__socials {
+    width: 70px;
+    height: 27px;
+    padding: 5px;
+    border-radius: 27px;
+    background: rgba(217, 217, 217, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-header__first__social {
+    width: 16px;
+    height: 16px;
+    margin: 0 6px;
+}
+.hero-header__first__locales {
+    margin-right: 10px;
+    width: 65px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+}
+.hero-header__first__locale {
+    cursor: pointer;
+    padding: 0 3px;
+}
+
+.hero-header__second {
+    height: 1px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.hero-header__third {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.hero-header__third__contacts {
+    width: 160px;
+    height: 24px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+.hero-header__third__contact-logo {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.hero-title {
+    margin-top: 40px;
+}
+.hero-title__secondary {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+}
+.hero-title__main {
+    margin: 10px 0 100px;
+    font-weight: 500;
+    font-size: 58px;
+    line-height: 68px;
+}
+
+.hero-button {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    padding-left: 48px;
+    padding-right: 48px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.hero-text {
+    align-self: flex-end;
+    margin: auto 95px 10px auto;
+    max-width: 500px;
+    height: 111px;
+    border-right: 2px solid rgba(255, 255, 255, 0.2);
+    padding-right: 10px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+}
