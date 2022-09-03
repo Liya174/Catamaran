@@ -29,6 +29,11 @@ body * {
     box-sizing: border-box;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     max-width: 1120px;
     width: 95%;
@@ -351,8 +356,6 @@ body * {
 }
 .cards-card__text__list {
     text-align: left;
-    margin: 0;
-    padding: 0;
 }
 .cards-card__text__list-el {
     margin-left: 18px;
@@ -362,4 +365,95 @@ body * {
     margin-top: 30px;
     font-size: 25px;
     line-height: 29px;
+}
+
+.boat-container {
+    color: #333333;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 645px 1fr;
+}
+
+.boat-images {
+    position: relative;
+}
+.boat-images__img {
+    position: absolute;
+    top: 120px;
+    right: 0;
+    width: 612px;
+    height: 429px;
+    border-radius: 10px;
+    z-index: 300;
+}
+.boat-images__shadow {
+    position: absolute;
+    top: 96px;
+    left: 0;
+    width: 459px;
+    height: 305px;
+    background: rgba(1, 36, 53, 0.25);
+    border-radius: 10px;
+    z-index: 200;
+}
+.boat-images__text {
+    position: absolute;
+    top: 496px;
+    left: 135px;
+    padding: 10px;
+    width: 410px;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 3px 7px 15px 3px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    z-index: 300;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+}
+
+.boat-text {
+    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.boat-text__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+}
+.boat-text__subtitle {
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    margin-top: 10px;
+    max-width: 324px;
+}
+.boat-text__list {
+    margin-top: 40px;
+    max-width: 405px;
+    height: 345px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Raleway-Light';
+    font-size: 13px;
+    line-height: 15px;
+    list-style: none;
+}
+.boat-text__list-el {
+    padding-left: 25px;
+    position: relative;
+}
+.boat-text__list-el::before {
+    position: absolute;
+    content: '';
+    top: calc(50% - 5px);
+    left: 0;
+    width: 4px;
+    height: 4px;
+    border: 3px #045279 solid;
+    border-radius: 50%;
 }
