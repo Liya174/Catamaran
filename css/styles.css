@@ -1072,10 +1072,6 @@ form button {
             align-items: center;
 }
 
-/* #modal-qa {
-    display: block; 
-}  
-*/
 .modal-qa-container {
     width: 930px;
     background-color: #FFFFFF;
@@ -1100,4 +1096,38 @@ form button {
     font-size: 12px;
     line-height: 14px;
     margin-bottom: 10px;
+}
+
+#dynamic-book-button {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    width: 150px;
+    height: 150px;
+    background: #012435;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    border-radius: 50%;
+    box-shadow: -1px 6px 13px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    z-index: 999;
+    opacity: 0;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    -webkit-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+            transform: translateY(100%);
+}
+#dynamic-book-button.active {
+    opacity: 1;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    -webkit-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+            transform: translateY(0%);
 }
