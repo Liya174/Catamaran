@@ -257,6 +257,12 @@ form button {
     line-height: 14px;
     letter-spacing: 0.18em;
 }
+.logo__line {
+    height: 1px;
+    width: 135px;
+    margin-top: 15px;
+    background: rgba(255, 255, 255, 0.1);
+}
 
 .entry-shown {
     opacity: 0;
