@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <link rel="shortcut icon" type="image/jpg" href="./imgs/favicon.svg"/>
     <script src="./scripts/bookModal.js" defer></script>
+    <script src="./scripts/qaModal.js" defer></script>
+    <script src="./scripts/localization.js" defer></script>
 </head>
 <body>
     <main>
@@ -26,6 +28,7 @@
                                 <a class="hero-header__first__nav-link" href="#our_boat">Our Boat</a>
                                 <a class="hero-header__first__nav-link" href="#feedback">Feedback</a>
                                 <a class="hero-header__first__nav-link" href="#contacts">Contacts</a>
+                                <div class="hero-header__first__nav-link qa-button">Q&A</div>
                             </div>
                             <div class="hero-header__first__left">
                                 <div class="socials-block">
@@ -33,9 +36,9 @@
                                     <a class="socials-block__social" href="#"><img src="./imgs/fb.svg"/></a>
                                 </div>
                                 <div class="hero-header__first__locales">
-                                    <span class="hero-header__first__locale" id="de_locale">de</span>|
-                                    <span class="hero-header__first__locale" id="en_locale">en</span>|
-                                    <span class="hero-header__first__locale" id="es_locale">es</span>
+                                    <span class="hero-header__first__locale">de</span>|
+                                    <span class="hero-header__first__locale">en</span>|
+                                    <span class="hero-header__first__locale">es</span>
                                 </div>
                             </div>
                         </div>
@@ -48,8 +51,8 @@
                         </div>
                     </div>
                     <div class="hero-title">
-                        <h3>Life is short. Let the sea set you free.</h3>
-                        <h1 class="hero-title__main">Your perfect day in the MED</h1>
+                        <h3 data-i18n-key="subtitle">Life is short. Let the sea set you free.</h3>
+                        <h1 class="hero-title__main" data-i18n-key="title">Your perfect day in the MED</h1>
                     </div>
                     <button class="hero-button book-button">
                         book now
@@ -314,6 +317,16 @@
                 <textarea name="comments" id="book-comments" type="text" placeholder="Comments..."></textarea>
                 <button type="submit">book</button>
             </form>
+        </div>
+    </div>
+    <div class="modal" id="modal-qa">
+        <div class="modal-container modal-qa-container">
+            <div class="modal-qa">
+                <h2 class="modal-qa__title">Q&A</h2>
+                <div id="qa_list"></div>
+                <div class="modal-qa__text">Solltest Du weitere Fragen haben, die wir hier nicht berücksichtigt haben, so sende diese gerne über unser Kontaktformular oder per Mail an info@sailpalma.com</div>
+                <div class="modal-qa__text">Uns ist es eine Ehre und Freude, Dich an Bord der Steve Rogers begrüßen zu dürfen und an erster Stelle steht für uns, diese Traum Tour für Dich zu einem besonderen Erlebnis zu machen.</div>
+            </div>
         </div>
     </div>
 </body>

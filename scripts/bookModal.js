@@ -17,7 +17,7 @@ function init() {
         modalBook.addEventListener('click', onDocumentClick); 
     }
 
-    const onDocumentClick = () => {
+    const onDocumentClick = (event) => {
         const isOutside = !event.target.closest('.modal-book');
         if (isOutside) {
             hideBookModal();
