@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
     <title>Catamaran</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="shortcut icon" type="image/jpg" href="./imgs/favicon.svg"/>
+    <script src="./scripts/bookModal.js" defer></script>
 </head>
 <body>
     <main>
@@ -49,7 +51,7 @@
                         <h3>Life is short. Let the sea set you free.</h3>
                         <h1 class="hero-title__main">Your perfect day in the MED</h1>
                     </div>
-                    <button class="button hero-button ">
+                    <button class="hero-button book-button">
                         book now
                     </button>
                     <div class="hero-text">
@@ -241,11 +243,23 @@
             </div>
         </section>
         <section class="feedback" id="feedback">
-            <!-- TODO: feedback -->
-            Feedback
+            <div class="container feedback-container">
+                <h4 class="feedback-title">Feedback</h4>
+                <span class="feedback-decription">
+                    Ask us any question, write or place an order.<br>Our managers will answer you as soon as possible.
+                </span>
+                <form id="feedback-form" class="feedback-form">
+                    <div class="feedback-form__inputs">
+                        <input name="name" class="form-input" id="feedback-name" type="text" placeholder="Name..." />
+                        <input name="tel" id="feedback-tel" type="tel" placeholder="Tel..."/>
+                    </div>
+                    <textarea name="message" id="feedback-message" type="text" placeholder="Message..."></textarea>
+                    <button type="submit">feedback</button>
+                </form>
+            </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="contacts">
         <div class="container footer-container">
             <div class="logo">
                 <span class="logo__name">S.Y Steve Rogers</span>
@@ -277,5 +291,30 @@
             </div>
         </div>
     </footer>
+    <div class="modal" id="modal-book">
+        <div class="modal-container modal-book">
+            <h2 class="modal-book-title">Book form</h2>
+            <form id="book-form" class="book-form">
+                <input name="name" class="form-input" id="book-name" type="text" placeholder="Name..." required/>
+                <input name="tel" id="book-tel" type="tel" placeholder="Tel..." required/>
+                <div class="book-form__inputs">
+                    <div class="book-form__input">
+                        <label for="book-date">Date</label>
+                        <input name="date" class="form-input" id="book-date" type="date" placeholder="dd/mm/yyyy" required/>
+                    </div>
+                    <div class="book-form__input">
+                        <label for="book-time">Time</label>
+                        <input name="time" id="book-time" type="time" required/>
+                    </div>
+                    <div class="book-form__input">
+                        <label for="book-persons">Persons</label>
+                        <input name="persons" id="book-persons" type="number" required/>
+                    </div>
+                </div>
+                <textarea name="comments" id="book-comments" type="text" placeholder="Comments..."></textarea>
+                <button type="submit">book</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
