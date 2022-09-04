@@ -617,7 +617,7 @@ form button {
 
 .boat-container {
     color: #333333;
-    height: 600px;
+    height: 620px;
     display: grid;
     grid-template-columns: 645px 1fr;
 }
