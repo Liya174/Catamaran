@@ -1,4 +1,18 @@
-// The locale our app first shows
+const langs = {
+    "en": {
+        "title": "Your perfect day in the MED",
+        "subtitle": "Life is short. Let the sea set you free."
+    },
+    "de": {
+        "title": "Dein perfekter Urlaubstag",
+        "subtitle": "Das Leben ist kurz. Nimm Dir Zeit für Meer!"
+    },
+    "es": {
+        "title": "Su día perfecto en el Mediterráneo",
+        "subtitle": "La vida es corta. Deja que el mar te libere!"
+    }
+}
+
 const defaultLocale = "en";
 
 const supportedLocales = ["en", "de", "es"];
@@ -27,8 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
 async function setLocale(newLocale) {
   if (newLocale === locale) return;
 
-  const newTranslations = await fetchTranslationsFor(newLocale);
-  console.log('newTranslations: ', newTranslations);
+  const newTranslations = langs[newLocale]
 
   locale = newLocale;
   translations = newTranslations;
