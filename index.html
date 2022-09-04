@@ -14,26 +14,26 @@
                 <div class="container hero-container">
                     <div class="hero-header">
                         <div class="hero-header__first">
-                            <div class="hero-header__first__logo">
-                                <span class="hero-header__first__logo-name">S.Y Steve Rogers</span>
-                                <span class="hero-header__first__logo-company">Sailing Catamaran</span>
+                            <div class="logo">
+                                <span class="logo__name">S.Y Steve Rogers</span>
+                                <span class="logo__company">Sailing Catamaran</span>
                             </div>
                             <div class="hero-header__first__nav">
-                                <a class="hero-header__first__nav-link" href="#">Main</a>
-                                <a class="hero-header__first__nav-link" href="#">Tour</a>
-                                <a class="hero-header__first__nav-link" href="#">Our Boat</a>
-                                <a class="hero-header__first__nav-link" href="#">Feedback</a>
-                                <a class="hero-header__first__nav-link" href="#">Contacts</a>
+                                <a class="hero-header__first__nav-link" href="#main">Main</a>
+                                <a class="hero-header__first__nav-link" href="#tour">Tour</a>
+                                <a class="hero-header__first__nav-link" href="#our_boat">Our Boat</a>
+                                <a class="hero-header__first__nav-link" href="#feedback">Feedback</a>
+                                <a class="hero-header__first__nav-link" href="#contacts">Contacts</a>
                             </div>
                             <div class="hero-header__first__left">
-                                <div class="hero-header__first__socials">
-                                    <a class="hero-header__first__social" href="#"><img src="./imgs/insta.svg"/></a>
-                                    <a class="hero-header__first__social" href="#"><img src="./imgs/fb.svg"/></a>
+                                <div class="socials-block">
+                                    <a class="socials-block__social" href="#"><img src="./imgs/insta.svg"/></a>
+                                    <a class="socials-block__social" href="#"><img src="./imgs/fb.svg"/></a>
                                 </div>
                                 <div class="hero-header__first__locales">
-                                    <span class="hero-header__first__locale">de</span>|
-                                    <span class="hero-header__first__locale">en</span>|
-                                    <span class="hero-header__first__locale">es</span>
+                                    <span class="hero-header__first__locale" id="de_locale">de</span>|
+                                    <span class="hero-header__first__locale" id="en_locale">en</span>|
+                                    <span class="hero-header__first__locale" id="es_locale">es</span>
                                 </div>
                             </div>
                         </div>
@@ -46,8 +46,8 @@
                         </div>
                     </div>
                     <div class="hero-title">
-                        <div class="hero-title__secondary">Life is short. Let the sea set you free.</div>
-                        <div class="hero-title__main">Your perfect day in the MED</div>
+                        <h3>Life is short. Let the sea set you free.</h3>
+                        <h1 class="hero-title__main">Your perfect day in the MED</h1>
                     </div>
                     <button class="button hero-button ">
                         book now
@@ -58,7 +58,7 @@
                 </div>
             </div>
         </section>
-        <section class="jorney">
+        <section class="jorney" id="main">
             <div class="container jorney-container">
                 <div class="jorney-title">
                     Choose Your Dream Journey
@@ -76,7 +76,7 @@
                 </div>
             </div>
         </section>
-        <section class="cards">
+        <section class="cards" id="tour">
             <div class="container cards-container">
                 <div class="cards-card">
                     <div class="cards-card__img cards-card__img__first">
@@ -162,7 +162,7 @@
                 </div>
             </div>
         </section>
-        <section class="boat">
+        <section class="boat" id="our_boat">
             <div class="container boat-container">
                 <div class="boat-images">
                     <div class="boat-images__shadow"></div>
@@ -174,7 +174,7 @@
                     </div>
                 </div> 
                 <div class="boat-text">
-                    <div class="boat-text__title">Our Boat</div>
+                    <h2 class="boat-text__title">Our Boat</h2>
                     <div class="boat-text__subtitle">An Isla 40 from Fountain Pajot - the market leader in luxury catamarans.</div>
                     <ul class="boat-text__list">
                         <li class="boat-text__list-el">
@@ -225,9 +225,57 @@
                 </div>
             </div>
         </section>
+        <section class="clients">
+            <!-- TODO: Our Happy Clients -->
+            <h2 class="clients-title">Our Happy Clients</h2>
+            <div class="clients-slider">
+                <div class="clients-slider__client">
+                    <img class="clients-slider__client__img" src="./imgs/client1.jpg">
+                </div>
+                <div class="clients-slider__client active">
+                    <img class="clients-slider__client__img" src="./imgs/client2.jpg">
+                </div>
+                <div class="clients-slider__client">
+                    <img class="clients-slider__client__img" src="./imgs/client3.jpg">
+                </div>
+            </div>
+        </section>
+        <section class="feedback" id="feedback">
+            <!-- TODO: feedback -->
+            Feedback
+        </section>
     </main>
-    <footer>
-
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="logo">
+                <span class="logo__name">S.Y Steve Rogers</span>
+                <span class="logo__company">Sailing Catamaran</span>
+            </div>
+            <div class="footer-contacts">
+                <h3>Contacts</h3>
+                <ul class="footer-contacts__list">
+                    <li class="footer-contacts__elem">
+                        <img  class="footer-contacts__logo" src="./imgs/wa.svg"/>
+                        <a href="https://wa.me/+34123456789">+34 123 456 789</a>
+                    </li>
+                    <li class="footer-contacts__elem">
+                        <img  class="footer-contacts__logo" src="./imgs/home.svg"/>
+                        <span>Nautic Mooring S.L.U. Sindicato 69,10<br>Palma Mallorca. E-07002 Palma Mallorca.</span>
+                    </li>
+                    <li class="footer-contacts__elem">
+                        <img  class="footer-contacts__logo" src="./imgs/email.svg"/>
+                        <a href="mailto:catamaran@gmail.com">catamaran@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-socials">
+                <div class="footer-socials__text">Follow us on social media so you don't miss out on news</div>
+                <div class="socials-block">
+                    <a class="socials-block__social" href="#"><img src="./imgs/insta.svg"/></a>
+                    <a class="socials-block__social" href="#"><img src="./imgs/fb.svg"/></a>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

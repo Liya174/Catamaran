@@ -9,6 +9,16 @@
 }
 
 @font-face {
+    src: url("../fonts/Raleway-Medium.ttf");
+    font-family: "Raleway-Medium";
+}
+
+@font-face {
+    src: url("../fonts/Raleway-Bold.ttf");
+    font-family: "Raleway-Bold";
+}
+
+@font-face {
     src: url("../fonts/Roboto.ttf");
     font-family: "Roboto";
 }
@@ -34,6 +44,34 @@ ul {
     padding: 0;
 }
 
+h1 {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway-Medium", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 58px;
+    line-height: 68px;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway-Bold", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #333333;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway-Medium", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+}
+
 .container {
     max-width: 1120px;
     width: 95%;
@@ -50,6 +88,41 @@ ul {
     color: #FFFFFF;
 }
 
+.socials-block {
+    width: 70px;
+    height: 27px;
+    padding: 5px;
+    border-radius: 27px;
+    background: rgba(217, 217, 217, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.socials-block__social {
+    width: 16px;
+    height: 16px;
+    margin: 0 6px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 15px;
+}
+.logo__name {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+}
+.logo__company {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.18em;
+}
+
+/* Pages */
 .hero {
     height: 650px;
     padding: 10px;
@@ -102,7 +175,7 @@ ul {
     grid-template-columns: 160px 1fr 175px;
     align-items: center;
 }
-.hero-header__first__logo {
+/* .hero-header__first__logo {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -118,7 +191,7 @@ ul {
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.18em;
-}
+} */
 .hero-header__first__nav {
     max-width: 455px;
     width: 100%;
@@ -138,21 +211,6 @@ ul {
     display: flex;
     align-content: center;
     justify-content: space-between;
-}
-.hero-header__first__socials {
-    width: 70px;
-    height: 27px;
-    padding: 5px;
-    border-radius: 27px;
-    background: rgba(217, 217, 217, 0.3);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.hero-header__first__social {
-    width: 16px;
-    height: 16px;
-    margin: 0 6px;
 }
 .hero-header__first__locales {
     margin-right: 10px;
@@ -197,16 +255,8 @@ ul {
 .hero-title {
     margin-top: 40px;
 }
-.hero-title__secondary {
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 33px;
-}
 .hero-title__main {
     margin: 10px 0 100px;
-    font-weight: 500;
-    font-size: 58px;
-    line-height: 68px;
 }
 
 .hero-button {
@@ -419,9 +469,6 @@ ul {
     align-items: center;
 }
 .boat-text__title {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 35px;
     text-align: center;
 }
 .boat-text__subtitle {
@@ -506,4 +553,80 @@ ul {
     font-size: 12px;
     line-height: 14px;
     text-align: center;
+}
+
+.clients {
+    margin-top: 130px;
+    overflow: hidden;
+}
+
+.clients-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.clients-slider {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 1743px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.clients-slider__client {
+    width: 560px;
+    height: 440px;
+}
+.clients-slider__client.active {
+    height: 450px;
+}
+.clients-slider__client__img {
+    width: 270px;
+    height: 230px;
+    object-fit: cover;
+}
+
+.footer {
+    height: 264px;
+    background: #00131D;
+    border-radius: 10px 10px 0px 0px;
+    color: #FFFFFF;
+    padding: 45px 0;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr 3fr;
+}
+
+.footer-contacts__list {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 25px;
+    height: 114px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer-contacts__elem {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.footer-contacts__logo {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.footer-socials {
+    align-self: center;
+    margin-left: 60px;
+}
+.footer-socials__text {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 15px;
 }
