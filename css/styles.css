@@ -785,8 +785,8 @@ form button {
 }
 
 .clients {
+    overflow-x: hidden;
     margin-top: 130px;
-    overflow: hidden;
 }
 
 .clients-title {
@@ -794,7 +794,16 @@ form button {
     margin-bottom: 20px;
 }
 
+.clients-content {
+    position: relative;
+    height: 500px;
+}
 .clients-slider {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 870px);
+    width: 1740px;
+    height: 500px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -804,22 +813,85 @@ form button {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 1743px;
     margin: 0 auto;
-    overflow: hidden;
 }
 .clients-slider__client {
+    position: relative;
     width: 560px;
-    height: 440px;
+    height: 100%;
 }
-.clients-slider__client.active {
-    height: 450px;
+.clients-slider__client__card {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    width: 560px;
+    height: 410px;
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.07);
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.07);
+    border-radius: 95px 40px;
+    padding: 195px 75px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+}
+.clients-slider__client__card__stars {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 15px;
+}
+.clients-slider__client__card__stars img {
+    width: 15px;
+    height: 15px;
+}
+.clients-slider__client__card__stars img:not(:last-child) {
+    margin-right: 13px;
+}
+.clients-slider__client__card__text {
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
 }
 .clients-slider__client__img {
-    width: 270px;
-    height: 230px;
+    position: absolute;
+    top: 30px;
+    left: calc(50% - 130px);
+    border-radius: 10px;
+    width: 250px;
+    height: 215px;
     -o-object-fit: cover;
        object-fit: cover;
+}
+.clients-slider__client.active .clients-slider__client__img {
+    top: 15px;
+    width: 270px;
+    height: 230px;
+}
+.clients-slider__client__card__name {
+    margin-top: auto;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: center;
+    color: #101A24;
+    font-family: "Raleway-Bold", Arial, Helvetica, sans-serif;
+    font-weight: 700;
 }
 
 .feedback {
