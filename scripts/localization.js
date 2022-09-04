@@ -1,7 +1,7 @@
 // The locale our app first shows
 const defaultLocale = "en";
 
-const supportedLocales = ["en", "ar", "de"];
+const supportedLocales = ["en", "de", "es"];
 
 const fullyQualifiedLocaleDefaults = {
   en: "en-US",
@@ -28,6 +28,7 @@ async function setLocale(newLocale) {
   if (newLocale === locale) return;
 
   const newTranslations = await fetchTranslationsFor(newLocale);
+  console.log('newTranslations: ', newTranslations);
 
   locale = newLocale;
   translations = newTranslations;
@@ -74,7 +75,6 @@ function supportedOrDefault(locales) {
 function bindLocaleSwitcher(initialValue) {
   const langs = Array.from(document.querySelectorAll('.hero-header__first__locale'));
   const initial = langs.find(lang => lang.textContent == initialValue);
-  console.log('initial: ', initial);
 
   initial.classList.add('active');
 
