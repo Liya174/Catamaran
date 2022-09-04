@@ -597,12 +597,21 @@ form button {
             flex-direction: column;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;
+    -o-transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+.cards-card__text.active {
+    visibility: visible;
+    opacity: 1;
 }
 .cards-card__text:last-child {
     -ms-flex-item-align: start;
         align-self: flex-start;
 }
-.cards-card__text__list {
+.cards-card__text__last {
     text-align: left;
 }
 .cards-card__text__list-el {
