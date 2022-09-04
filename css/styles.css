@@ -204,6 +204,7 @@ form button {
     font-weight: 700;
 }
 
+/* common classes */
 .container {
     max-width: 1120px;
     width: 95%;
@@ -255,6 +256,22 @@ form button {
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.18em;
+}
+
+.entry-shown {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+            transform: translateY(100%);
+}
+.entry-shown.active {
+    opacity: 1;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    -webkit-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+            transform: translateY(0%);
 }
 
 /* Pages */
