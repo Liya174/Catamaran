@@ -1,41 +1,27 @@
 function init() {
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+        const heroBg = document.querySelector('.hero-background');
+        const heroBgPosition = heroBg.getBoundingClientRect();
+        const isHeroBgVisible = heroBgPosition.top < window.innerHeight && heroBgPosition.bottom >= 0;
 
-    // const onDocumentScroll = () => {
-    //     const heroBg = document.querySelector('.hero-background');
-    //     console.log('heroBg: ', heroBg);
-    //     const heroBgPosition = heroBg.getBoundingClientRect();
-    //     const isHeroBgVisible = heroBgPosition.top < window.innerHeight && heroBgPosition.bottom >= 0;
-    //     let i = 1;
+        if (isHeroBgVisible) {
+            let slides = document.querySelectorAll(".hero-background__image");
+          
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove("active");  
+            }
 
-    //     const changeBg = () => {
-    //         document.querySelector('.hero-background').style.backgroundImage = `url('../imgs/hero_bg_${i}.jpg`;
-    //         i = (i == 4) ? 1 : (i + 1);
-    //     }
+            slideIndex++;
+            if (slideIndex > slides.length) slideIndex = 1;
 
-    //     let intervalId;
-    //     if (isHeroBgVisible) {
-    //         intervalId = setInterval(changeBg, 2000);
-    //     } else {
-    //         if (intervalId) {
-    //             console.log('clearInterval: ', clearInterval);
-    //             clearInterval(intervalId);
-    //         }
-    //     }
-    // }
-  
-    // document.addEventListener('scroll', onDocumentScroll);
-
-    // const changeBg = () => {
-    //     const heroBg = document.querySelector('.hero-background');
-    //     const heroBgPosition = heroBg.getBoundingClientRect();
-    //     const isHeroBgVisible = heroBgPosition.top < window.innerHeight && heroBgPosition.bottom >= 0;
-    //     if (isHeroBgVisible) {
-    //         heroBg.style.backgroundImage = `url('../imgs/hero_bg_${i}.jpg)`;
-    //         i = (i == 4) ? 1 : (i + 1); 
-    //     }
-    // }
-
-    // setInterval(changeBg, 1000);
+            slides[slideIndex-1].classList.add("active");
+        }
+      
+        setTimeout(showSlides, 3000); 
+    }
 };
 
 document.addEventListener('DOMContentLoaded', init)
