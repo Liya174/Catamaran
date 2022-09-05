@@ -282,6 +282,7 @@ form button {
 
 /* Pages */
 .hero {
+    position: relative;
     height: 650px;
     padding: 10px;
     background-color: #012435;
@@ -289,13 +290,24 @@ form button {
 }
 
 .hero-background {
-    position: relative;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1;
+}
+.hero-background__image {
+    display: none;
     width: 100%;
     height: 100%;
     border-radius: 20px;
-    background: no-repeat center/cover url('../imgs/hero_bg_1.jpg');
+    -o-object-fit: cover;
+       object-fit: cover;
 }
-
+.hero-background__image.active {
+    display: block;
+}
 .hero-background::after {
     content: "";
     position: absolute;
@@ -305,7 +317,7 @@ form button {
     bottom: 0;
     background-color: rgba(217, 217, 217, 0.45);
     border-radius: 20px; 
-    z-index: 0;
+    z-index: 10;
 }
 
 .hero-container {
@@ -852,6 +864,21 @@ form button {
     width: 560px;
     height: 100%;
 }
+.clients-slider__client.order1 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+}
+.clients-slider__client.order2 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+}
+.clients-slider__client.order3 {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+}
 .clients-slider__client__card {
     position: absolute;
     left: 0;
@@ -911,7 +938,7 @@ form button {
     -o-object-fit: cover;
        object-fit: cover;
 }
-.clients-slider__client.active .clients-slider__client__img {
+.clients-slider__client.order2 .clients-slider__client__img {
     top: 15px;
     width: 270px;
     height: 230px;

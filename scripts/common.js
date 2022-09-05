@@ -34,15 +34,13 @@ function init() {
       });
     }
 
-    const options = { threshold: [1] };
+    const options = { threshold: [0.5] };
     const observer = new IntersectionObserver(onEntry, options);
     for (let elm of entryShownElements) {
         observer.observe(elm);
     }
 
     // toggle book button visibility 
-    
-
     const onDocumentScroll = () => {
       const dynamicBookButton = document.querySelector('#dynamic-book-button');
       const isDynamicVisible = dynamicBookButton.classList.contains('active');

@@ -7,8 +7,10 @@
     <title>Catamaran</title>
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <link rel="shortcut icon" type="image/jpg" href="./imgs/favicon.svg"/>
+    <script src="./scripts/backgroundSlider.js" defer></script>
     <script src="./scripts/bookModal.js" defer></script>
     <script src="./scripts/common.js" defer></script>
+    <script src="./scripts/flexOrderSlider.js" defer></script>
     <script src="./scripts/qaModal.js" defer></script>
     <script src="./scripts/localization.js" defer></script>
 </head>
@@ -16,51 +18,56 @@
     <main>
         <section class="hero">
             <div class="hero-background">
-                <div class="container hero-container">
-                    <div class="hero-header">
-                        <div class="hero-header__first">
-                            <div class="logo">
-                                <span class="logo__name">S.Y Steve Rogers</span>
-                                <span class="logo__company">Sailing Catamaran</span>
+                <img class="hero-background__image active" src="../imgs/hero_bg_1.jpg"/>
+                <img class="hero-background__image" src="../imgs/hero_bg_2.jpg"/>
+                <img class="hero-background__image" src="../imgs/hero_bg_3.jpg"/>
+                <img class="hero-background__image" src="../imgs/hero_bg_4.jpg"/>
+                <img class="hero-background__image" src="../imgs/hero_bg_4.jpg"/>
+            </div>
+            <div class="container hero-container">
+                <div class="hero-header">
+                    <div class="hero-header__first">
+                        <div class="logo">
+                            <span class="logo__name">S.Y Steve Rogers</span>
+                            <span class="logo__company">Sailing Catamaran</span>
+                        </div>
+                        <div class="hero-header__first__nav">
+                            <a class="hero-header__first__nav-link" href="#main">Main</a>
+                            <a class="hero-header__first__nav-link" href="#tour">Tour</a>
+                            <a class="hero-header__first__nav-link" href="#our_boat">Our Boat</a>
+                            <a class="hero-header__first__nav-link" href="#feedback">Feedback</a>
+                            <a class="hero-header__first__nav-link" href="#contacts">Contacts</a>
+                            <div class="hero-header__first__nav-link qa-button">Q&A</div>
+                        </div>
+                        <div class="hero-header__first__left">
+                            <div class="socials-block">
+                                <a class="socials-block__social" href="#"><img src="./imgs/insta.svg"/></a>
+                                <a class="socials-block__social" href="#"><img src="./imgs/fb.svg"/></a>
                             </div>
-                            <div class="hero-header__first__nav">
-                                <a class="hero-header__first__nav-link" href="#main">Main</a>
-                                <a class="hero-header__first__nav-link" href="#tour">Tour</a>
-                                <a class="hero-header__first__nav-link" href="#our_boat">Our Boat</a>
-                                <a class="hero-header__first__nav-link" href="#feedback">Feedback</a>
-                                <a class="hero-header__first__nav-link" href="#contacts">Contacts</a>
-                                <div class="hero-header__first__nav-link qa-button">Q&A</div>
-                            </div>
-                            <div class="hero-header__first__left">
-                                <div class="socials-block">
-                                    <a class="socials-block__social" href="#"><img src="./imgs/insta.svg"/></a>
-                                    <a class="socials-block__social" href="#"><img src="./imgs/fb.svg"/></a>
-                                </div>
-                                <div class="hero-header__first__locales">
-                                    <span class="hero-header__first__locale">de</span>|
-                                    <span class="hero-header__first__locale">en</span>|
-                                    <span class="hero-header__first__locale">es</span>
-                                </div>
+                            <div class="hero-header__first__locales">
+                                <span class="hero-header__first__locale">de</span>|
+                                <span class="hero-header__first__locale">en</span>|
+                                <span class="hero-header__first__locale">es</span>
                             </div>
                         </div>
-                        <div class="hero-header__second"></div>
-                        <div class="hero-header__third">                
-                            <a href="https://wa.me/+34123456789" class="hero-header__third__contacts">
-                                <img  class="hero-header__third__contact-logo" src="./imgs/wa.svg"/>
-                                <span>+34 123 456 789</span>
-                            </a>
-                        </div>
                     </div>
-                    <div class="hero-title">
-                        <h3 data-i18n-key="subtitle">Life is short. Let the sea set you free.</h3>
-                        <h1 class="hero-title__main" data-i18n-key="title">Your perfect day in the MED</h1>
+                    <div class="hero-header__second"></div>
+                    <div class="hero-header__third">                
+                        <a href="https://wa.me/+34123456789" class="hero-header__third__contacts">
+                            <img  class="hero-header__third__contact-logo" src="./imgs/wa.svg"/>
+                            <span>+34 123 456 789</span>
+                        </a>
                     </div>
-                    <button class="hero-button book-button" id="static-book-button">
-                        book now
-                    </button>
-                    <div class="hero-text">
-                        Wide open spaces, sun, sea, wind and crystal clear water. Experience the feeling of freedom under the glitter of white sails!
-                    </div>
+                </div>
+                <div class="hero-title">
+                    <h3 data-i18n-key="subtitle">Life is short. Let the sea set you free.</h3>
+                    <h1 class="hero-title__main" data-i18n-key="title">Your perfect day in the MED</h1>
+                </div>
+                <button class="hero-button book-button" id="static-book-button">
+                    book now
+                </button>
+                <div class="hero-text">
+                    Wide open spaces, sun, sea, wind and crystal clear water. Experience the feeling of freedom under the glitter of white sails!
                 </div>
             </div>
         </section>
@@ -235,7 +242,7 @@
             <h2 class="clients-title" data-i18n-key="cliens_title">Our Happy Clients</h2>
             <div class="clients-content">
                 <div class="clients-slider">
-                    <div class="clients-slider__client">
+                    <div class="clients-slider__client order1" data-order="1">
                         <div class="clients-slider__client__card">
                             <div class="clients-slider__client__card__stars">
                                 <img src="./imgs/star.svg" />
@@ -253,7 +260,7 @@
                         </div>
                         <img class="clients-slider__client__img" src="./imgs/client1.jpg">
                     </div>
-                    <div class="clients-slider__client active">
+                    <div class="clients-slider__client order2" data-order="2">
                         <div class="clients-slider__client__card">
                             <div class="clients-slider__client__card__stars">
                                 <img src="./imgs/star.svg" />
@@ -272,7 +279,7 @@
                         </div>
                         <img class="clients-slider__client__img" src="./imgs/client2.jpg">
                     </div>
-                    <div class="clients-slider__client">
+                    <div class="clients-slider__client order3" data-order="3">
                         <div class="clients-slider__client__card">
                             <div class="clients-slider__client__card__stars">
                                 <img src="./imgs/star.svg" />
