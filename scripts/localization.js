@@ -1,7 +1,20 @@
 const langs = {
     "en": {
+        "nav_main": "Main",
+        "nav_tour": "Tour",
+        "nav_boat": "Our Boat",
+        "nav_feedback": "Feedback",
+        "nav_contacts": "Contacts",
+        "nav_qa": "Q&A",
+        "book_btn": "book now",
         "title": "Your perfect day in the MED",
         "subtitle": "Life is short. Let the sea set you free.",
+        "hero_text": "Wide open spaces, sun, sea, wind and crystal clear water. Experience the feeling of freedom under the glitter of white sails!",
+
+        "jorney_title": "Choose Your Dream Journey",
+        "jorney_text1": "We welcome you on board of our catamaran and show you the Mallorcan coast far away from the hustle and bustle. Exclusively and in a private setting or with a maximum of 12 people on board.",
+        "jorney_text2": "Sail with us along the Mallorcan coast and discover the island from a different perspective after the colorful hustle of beautiful Palma.",
+        "jorney_text3": "We will anchor in one of the beautiful bays with turquoise and blue water where you can enjoy the cool mediterranean water while swimming, snorkelling, using the stand up paddle boards or just lie in the sun, the semi-shade under sun sails and relax on board with a cool drink in your hand and delicious tapas.",
 
         "card1_title": "4 hour tour",
         "card1_text1": "Sail and swim, snorkel, relax and enjoy! Experience the Mallorcan coast and the crystal clear, turquoise Mediterranean water in a small setting of maximum 12 people.",
@@ -28,6 +41,14 @@ const langs = {
         "card3_list_el2": "Hostess",
         "card3_list_el3": "Fun Equipment on board",
 
+        "boat_title": "Our Boat",
+        "boat_subtitle": "An Isla 40 from Fountain Pajot - the market leader in luxury catamarans.",
+        "boat_hover": "Meeting point: La Lonja Marina - one of the most beautiful marinas in Mallorca.The marina is in the centre of Palma between Santa Catalina and La Lonja and only 5 minutes from the cathedral.\n\nWhen everyone is on board: get out of the harbour and... hoist the sails! Bye the way... sometimes we might have to add the arabian wind.",
+        "boat_list_el1": "Our 2021 luxury catamaran is 12m long and 7m wide. Top equipped, the Steve Rogers is perfectly suited to provide an unforgettable experience for a maximum of 12 guests.",
+        "boat_list_el2": "The large trampoline in the foredeck and plenty of more space there invites to sunbathe and chill out.The spacious cockpit offers comfortable seats around the set table. You can be right in the middle of it all, or just breathe in the freedom all by yourself for a few minutes!",
+        "boat_list_el3": "A variety of fun equipment on board is: free of charge SUPs, snorkels and swimming goggles, pool noodles, swimming rings and for the kids of course water pistols ;-)",
+        "boat_list_el4": "Last but not least: It goes without saying that our FP Isla 40 is equipped with the latest safety equipment!",
+
         "client1_text": "The trip with the Steve Rogers was a perfect end to our holiday. Once again sea, space, fresh sea air and headfirst into the clear waters of Mallorca before heading back home. The crew was super accommodating and nice. For the children, the highlight was being able to stand at the wheel and swim between the runners of the catamaran, while we enjoyed the exceptionally good Aperol Spritz. ...life is beautiful!",
         "cliens_title": "Our Happy Clients",
         "client1_name": "Axel S. from Neustadt I. H.",
@@ -37,8 +58,21 @@ const langs = {
         "client3_name": "Isabell E. from Berlin",
     },
     "de": {
+        "nav_main": "",
+        "nav_tour": "",
+        "nav_boat": "",
+        "nav_feedback": "",
+        "nav_contacts": "",
+        "nav_qa": "",
+        "book_btn": "buche jetzt",
         "title": "Dein perfekter Urlaubstag",
         "subtitle": "Das Leben ist kurz. Nimm Dir Zeit für Meer!",
+        "hero_text": "Weite, Sonne, Meer, Wind und kristallklares Wasser - Unter dem Glitzern weißer Segel das Gefühl von Freiheit erleben.",
+
+        "jorney_title": "Wählen Deine Traumtour",
+        "jorney_text1": "Wir empfangen Dich auf unserem Katamaran und zeigen Dir die mallorquinische Küste fernab vom Trubel. Exklusiv und in privatem Rahmen oder mit maximal 12 Personen gemeinsam an Bord.",
+        "jorney_text2": "Segel mit uns entlang der mallorquinischen Küste und entdecke Mallorca nach dem bunten Treiben im wunderschönen Palma aus einer anderen Perspektive.",
+        "jorney_text3": "In einer der wunderschönen Buchten mit türkisfarbenem und blauem Wasser ankern wir dann und Du kannst genießen: das kühle Mittelmeerwasser beim Schwimmen, Schnorcheln, auf dem Stand Up Paddelboard oder die Sonne, den Halbschatten unter Sonnensegeln und entspannt an Bord mit einem kühlen Drink in der Hand und leckeren Tapas.",
 
         "card1_title": "4 Stunden Ausflug",
         "card1_text1": "Segeln und schwimmen, schnorcheln, entspannen und genießen! Erlebe die mallorquinische Küste und das kristallklare, türkisfarbene Mittelmeerwasser in kleinem Rahmen von maximal 12 Personen.",
@@ -65,6 +99,14 @@ const langs = {
         "card3_list_el2": "Steward/ess",
         "card3_list_el3": "Fun Equipment an Bord (Schnorchel, Taucherbrillen, SUP, Schwimmreifen).",
 
+        "boat_title": "Unser Boot",
+        "boat_subtitle": "Eine Isla 40 von Fountain Pajot – dem Marktführer für Luxus Katamarane",
+        "boat_hover": "Treffpunkt: La Lonja Marina - eine der schönsten Marinas von Mallorca. Die Marina ist im Zentrum von Palma zwischen Santa Catalina und La Lonja und nur 5 Minuten von der Kathedrale entfernt. \n\nWenn alle an Bord sind: raus aus dem Hafen und... Segel hoch! Manchmal müssen wir eventuell auch den arabischen Wind hinzuschalten...",
+        "boat_list_el1": "Unser 2021er Luxus Katamaran ist 12m lang und 7 m breit. Top ausgestattet ist die Steve Rogers perfekt geeignet, um maximal 12 Gästen ein unvergessliches Erlebnis zu ermöglichen.",
+        "boat_list_el2": "Großes Trampolin im Vordeck und ausreichend Platz zum Sonnen und Chillen. Großzügiges Cockpit mit gemütlichen Sitzen rund um den gedeckten Tisch – Du kannst mittendrin sein oder auch einmal ein paar Minuten die Freiheit ganz alleine atmen!",
+        "boat_list_el3": "Das Fun Equipment: kostenfrei SUPs, Schnorchel und Schwimmbrillen, Poolnoodeln und Schwimmringe und für die Kinder natürlich Wasserpistolen ;-)",
+        "boat_list_el4": "Und für uns ganz selbstverständlich: Unsere FP Isla 40 ist mit dem neuesten Sicherheits-Equipment ausgestattet!",
+
         "client1_text": "Der Ausflug mit der Steve Rogers war ein perfekter Abschluss für unseren Urlaub. Nochmal Meer, Weite, frische Seeluft und kopfüber ins klare Wasser von Mallorca bevor es wieder nach Hause geht. Die Crew war super zuvorkommend und nett. Für die Kinder war das Highlight selbst mal am Steuer stehen zu dürfen, und zwischen den Kufen des Katamarans hindurch zu schwimmen, während wir den tatsächlich außergewöhnlich guten Aperol Spritz genießen konnten. …das Leben ist schön!",
         "cliens_title": "Unsere Zufriedenen Kunden",
         "client1_name": "Axel S. from Neustadt I. H.",
@@ -74,8 +116,21 @@ const langs = {
         "client3_name": "Isabell E. from Berlin",
     },
     "es": {
+        "nav_main": "Principal",
+        "nav_tour": "La Gira",
+        "nav_boat": "Nuestro bote",
+        "nav_feedback": "El Feedback",
+        "nav_contacts": "Contactos",
+        "nav_qa": "Q&A",
+        "book_btn": "reservar",
         "title": "Su día perfecto en el Mediterráneo",
         "subtitle": "La vida es corta. Deja que el mar te libere!",
+        "hero_text": "Amplios espacios abiertos, sol, mar, viento y aguas cristalinas: experimente la sensación de libertad bajo el brillo de las velas blancas.",
+
+        "jorney_title": "Elija el viaje de sus sueños",
+        "jorney_text1": "Le damos la bienvenida en nuestro catamarán y le mostramos la costa mallorquina lejos del bullicio. En exclusiva y en un entorno privado o con un máximo de 12 personas juntas a bordo.",
+        "jorney_text2": "Navegue con nosotros por la costa mallorquina y descubra Mallorca desde una perspectiva diferente después del ajetreo de la bella Palma.",
+        "jorney_text3": "Anclamos en una de las hermosas bahías de aguas turquesas y azules, donde podrá experimentar el fresco del Mar Mediterráneo mientras nada, practica el snorkel y en el Stand Up Paddleboard o simplemente se relaja a bordo del sol o la semisombra bajo las velas de sol con una bebida fresca en la mano y disfruta de las deliciosas tapas.",
 
         "card1_title": "Excursión de 4 horas",
         "card1_text1": "Navegue y nade, bucee, relájese y disfrute. Disfrute de la costa mallorquina y de las aguas cristalinas y turquesas del Mediterráneo en un entorno reducido de un máximo de 12 personas.",
@@ -101,6 +156,14 @@ const langs = {
         "card3_list_el1": "Skipper",
         "card3_list_el2": "Azafata",
         "card3_list_el3": "Equipo de diversión a bordo",
+
+        "boat_title": "Nuestro barco",
+        "boat_subtitle": "Un Isla 40 de Fountain Pajot, el líder del mercado de catamaranes de lujo.",
+        "boat_hover": "Punto de encuentro: el puerto deportivo de La Lonja, uno de los más bellos de Mallorca. El puerto deportivo está en el centro de Palma, entre Santa Catalina y La Lonja, y a sólo 5 minutos de la catedral. \n\nCuando todos estén a bordo: salgan del puerto e... ¡Icen las velas! Por cierto: a veces hay que añadir el viento de Arabia.",
+        "boat_list_el1": "Nuestro catamarán de lujo 2021 tiene 12 m de longitud y 7 m de ancho. El Steve Rogers está perfectamente equipado para ofrecer una experiencia inolvidable a un máximo de 12 personas.",
+        "boat_list_el2": "La gran cama elástica de la cubierta de proa y las amplias zonas para tomar el sol ofrecen mucho espacio para tomar el sol y relajarse. La espaciosa bañera invita a sentarse cómodamente alrededor de la mesa puesta. Puedes estar en medio de todo, o pasar unos minutos respirando la libertad a solas.",
+        "boat_list_el3": "Selección de equipos de diversión: gratis SUP, tubos de buceo y gafas de natación, fideos de piscina y aros de natación y, por supuesto, pistolas de agua para los niños ;-)",
+        "boat_list_el4": "No hace falta decir que nuestro FP Isla 40 está equipado con lo último en seguridad.",
 
         "client1_text": "El viaje con el Steve Rogers fue un final perfecto para nuestras vacaciones. De nuevo el mar, el espacio, el aire fresco del mar y la cabeza en las aguas claras de Mallorca antes de volver a casa. La tripulación fue súper complaciente y agradable. Para los niños, lo más destacado fue poder situarse en el timón y nadar entre los corredores del catamarán, mientras nosotros disfrutábamos del excepcionalmente bueno Aperol Spritz. ...¡la vida es bella!",
         "cliens_title": "Nuestros clientes satisfechos",
