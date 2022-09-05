@@ -49,6 +49,11 @@ const langs = {
         "boat_list_el3": "A variety of fun equipment on board is: free of charge SUPs, snorkels and swimming goggles, pool noodles, swimming rings and for the kids of course water pistols ;-)",
         "boat_list_el4": "Last but not least: It goes without saying that our FP Isla 40 is equipped with the latest safety equipment!",
 
+        "people_skipper": "Our Skipper",
+        "people_skipper_text": "Thorsten is ...what can we say... the heart of the Steve Rogers, almost one with the boat.\n\nA cheerful nature of a Rhinlander, the glass is always half full, and after many sailing licences and some sailing adventures he has discovered his love for catamarans.\n\nSafety and ease and the joy of sailing form a perfect team in his case.",
+        "people_hostess": "Our Hostess",
+        "people_hostess_text": "If anyone understands service, it is Klaudia and her colleagues.\n\nThey have been in the business for many years and have now settled on our catamaran for the moment.\n\nYou say what you need and Klaudia or her colleague will make sure you get it. Whatever is possible for us on board, she makes it possible. We couldn't imagine a friendlier and more relaxed all-round service.",
+
         "client1_text": "The trip with the Steve Rogers was a perfect end to our holiday. Once again sea, space, fresh sea air and headfirst into the clear waters of Mallorca before heading back home. The crew was super accommodating and nice. For the children, the highlight was being able to stand at the wheel and swim between the runners of the catamaran, while we enjoyed the exceptionally good Aperol Spritz. ...life is beautiful!",
         "cliens_title": "Our Happy Clients",
         "client1_name": "Axel S. from Neustadt I. H.",
@@ -56,14 +61,21 @@ const langs = {
         "client2_name": "Darren B. from Kapstadt",
         "client3_text": "First I was sceptical about turning my golf day into a sailing day... but as soon as we set sail from Palma, that was no longer an issue. You can't get enough of this view over the sea. Complete deceleration. The crew is competent and relaxed; I didn't miss a thing. Even dolphins crossed our path. What more could you want! Only question now: how to fit this new hobby into my everyday life. Thanks to the Skipper and Team and thanks to the Steve Rogers!",
         "client3_name": "Isabell E. from Berlin",
+
+        "feedback_title": "feedback",
+        "feedback_decsription": "Ask us any question, write or place an order.\nOur managers will answer you as soon as possible.",
+        "feedback_btn": "feedback",
+
+        "footer_title": "Contacts",
+        "footer_socials": "Follow us on social media so you don't miss out on news",
     },
     "de": {
-        "nav_main": "",
-        "nav_tour": "",
-        "nav_boat": "",
-        "nav_feedback": "",
-        "nav_contacts": "",
-        "nav_qa": "",
+        "nav_main": "Hauptseite",
+        "nav_tour": "Tour",
+        "nav_boat": "Unser Boot",
+        "nav_feedback": "Feedback",
+        "nav_contacts": "Kontakte",
+        "nav_qa": "Q&A",
         "book_btn": "buche jetzt",
         "title": "Dein perfekter Urlaubstag",
         "subtitle": "Das Leben ist kurz. Nimm Dir Zeit für Meer!",
@@ -107,6 +119,11 @@ const langs = {
         "boat_list_el3": "Das Fun Equipment: kostenfrei SUPs, Schnorchel und Schwimmbrillen, Poolnoodeln und Schwimmringe und für die Kinder natürlich Wasserpistolen ;-)",
         "boat_list_el4": "Und für uns ganz selbstverständlich: Unsere FP Isla 40 ist mit dem neuesten Sicherheits-Equipment ausgestattet!",
 
+        "people_skipper": "Unser Skipper",
+        "people_skipper_text": "Thorsten ist …was soll man sagen… das Herz der Steve Rogers, fast schon eins mit Boot.\n\nEine rheinische Frohnatur, das Glas ist immer halb voll, und nach vielen Segelscheinen und einigen Segelabenteuern hat er seine Liebe zum Katamaran entdeckt.\n\nSicherheit und Leichtigkeit und Freude am Segeln bilden bei ihm ein perfektes Team.",
+        "people_hostess": "Unsere Hostess",
+        "people_hostess_text": "Wenn jemand Service versteht, dann sind es Klaudia und ihre Kolleginnen.\n\nSeit vielen Jahren in der Branche sind sie nun auf unserem Katamaran zunächst angekommen.\n\nDu sagst was Du brauchst und Klaudia oder ihre Kollegin sorgt dafür, dass Du es erhältst. Was uns an Bord möglich ist, macht sie möglich. Eine freundlichere und entspanntere Rundum Betreuung könnten wir uns nicht vorstellen.",
+
         "client1_text": "Der Ausflug mit der Steve Rogers war ein perfekter Abschluss für unseren Urlaub. Nochmal Meer, Weite, frische Seeluft und kopfüber ins klare Wasser von Mallorca bevor es wieder nach Hause geht. Die Crew war super zuvorkommend und nett. Für die Kinder war das Highlight selbst mal am Steuer stehen zu dürfen, und zwischen den Kufen des Katamarans hindurch zu schwimmen, während wir den tatsächlich außergewöhnlich guten Aperol Spritz genießen konnten. …das Leben ist schön!",
         "cliens_title": "Unsere Zufriedenen Kunden",
         "client1_name": "Axel S. from Neustadt I. H.",
@@ -114,6 +131,13 @@ const langs = {
         "client2_name": "Darren B. from Kapstadt",
         "client3_text": "Ich hätte nie gedacht, dass mir das Segeln so viel Freude machen würde. Mallorca von dieser Seite kennenzulernen war großartig. Einfach vom Boot aus ins Wasser zu springen und mit dem SUP drum herum ist echt besonders. Wir waren bei unserem Turn nur 10 Gäste an Bord und irgendwie passten wir auch alle zusammen. Wie ein Familienausflug mit netten Gesprächen, chillen wenn man wollte und leckeren Tapas und Drinks. Danke an die tolle Crew für den wirklich perfekten Urlaubstag!",
         "client3_name": "Isabell E. from Berlin",
+        
+        "feedback_title": "Rückmeldung",
+        "feedback_decsription": "Stellen Sie uns eine Frage, schreiben Sie uns oder geben Sie eine Bestellung auf.\nUnsere Manager werden Ihnen so schnell wie möglich antworten.",
+        "feedback_btn": "Rückmeldung",
+        
+        "footer_title": "Kontakte",
+        "footer_socials": "Folgen Sie uns in den sozialen Medien, um keine Neuigkeiten zu verpassen",
     },
     "es": {
         "nav_main": "Principal",
@@ -165,6 +189,11 @@ const langs = {
         "boat_list_el3": "Selección de equipos de diversión: gratis SUP, tubos de buceo y gafas de natación, fideos de piscina y aros de natación y, por supuesto, pistolas de agua para los niños ;-)",
         "boat_list_el4": "No hace falta decir que nuestro FP Isla 40 está equipado con lo último en seguridad.",
 
+        "people_skipper": "Nuestro patrón",
+        "people_skipper_text": "Thorsten es ...qué decir... el corazón del Steve Rogers, casi uno con barco.\n\nCon el carácter alegre de la gente del Rin, el vaso siempre está medio lleno, y después de muchas licencias de navegación y algunas aventuras a vela ha descubierto su amor por los catamaranes.\n\nLa seguridad, la facilidad y la alegría de navegar forman un equipo perfecto con él.",
+        "people_hostess": "Nuestra anfitriona",
+        "people_hostess_text": "Si alguien entiende de servicio, son Klaudia y sus colegas.\n\nLlevan muchos años en el negocio y ahora han llegado primero a nuestro catamarán.\n\nDiga lo que necesita y Klaudia o su colega se asegurarán de que lo consiga. Lo que es posible para nosotros a bordo, ella lo hace posible. No podríamos imaginar un servicio más amable y relajado en todos los sentidos.",
+
         "client1_text": "El viaje con el Steve Rogers fue un final perfecto para nuestras vacaciones. De nuevo el mar, el espacio, el aire fresco del mar y la cabeza en las aguas claras de Mallorca antes de volver a casa. La tripulación fue súper complaciente y agradable. Para los niños, lo más destacado fue poder situarse en el timón y nadar entre los corredores del catamarán, mientras nosotros disfrutábamos del excepcionalmente bueno Aperol Spritz. ...¡la vida es bella!",
         "cliens_title": "Nuestros clientes satisfechos",
         "client1_name": "Axel S. from Neustadt I. H.",
@@ -172,6 +201,13 @@ const langs = {
         "client2_name": "Darren B. from Kapstadt",
         "client3_text": "Al principio era escéptico sobre la posibilidad de convertir mi día de golf en un día de navegación... pero tan pronto como zarpamos de Palma, eso dejó de ser un problema. No te cansarás de ver esta vista sobre el mar. Desaceleración completa. La tripulación es competente y relajada; no eché en falta nada. Incluso los delfines se cruzaron en nuestro camino. ¿Qué más se puede pedir? La única pregunta ahora es: ¿cómo puedo encajar esta nueva afición en mi vida diaria? Gracias al patrón y al equipo y gracias Steve Rogers.",
         "client3_name": "Isabell E. from Berlin",
+
+        "feedback_title": "mensaje de vuelta",
+        "feedback_decsription": "Háganos una pregunta, escríbanos o haga un pedido.\nNuestros gerentes le responderán lo antes posible.",
+        "feedback_btn": "retroalimentación",
+
+        "footer_title": "Contactos",
+        "footer_socials": "Síguenos en las redes sociales para cualquier actualización extrañar",
     }
 }
 

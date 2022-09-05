@@ -58,6 +58,17 @@ function init() {
     }
 
     document.addEventListener('scroll', onDocumentScroll);
+
+    // feedback form
+    const feedbackForm = document.querySelector('#feedback-form');
+    
+    const onFeedbackSubmit = (event) => {
+      event.preventDefault();
+      console.log('event: ', event);
+      
+    }
+
+    feedbackForm.addEventListener('submit', onFeedbackSubmit);
 };
 
 document.addEventListener('DOMContentLoaded', init)
