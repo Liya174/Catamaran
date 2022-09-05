@@ -1111,6 +1111,7 @@ form button {
 }
 
 .modal-qa-container {
+    max-height: calc(100vh - 225px);
     width: 930px;
     background-color: #FFFFFF;
     border-radius: 50px;
@@ -1119,6 +1120,7 @@ form button {
 
 .modal-qa {
     width: 100%;
+    max-height: calc(100vh - 225px);
     background: -o-linear-gradient(293.51deg, rgba(0, 19, 29, 0.84) 0.54%, rgba(0, 19, 29, 0.84) 21.37%, rgba(1, 35, 52, 0.794031) 41.45%, rgba(4, 82, 121, 0.66) 100%);
     background: -o-linear-gradient(293.51deg, rgba(0, 19, 29, 0.84) 0.54%, rgba(0, 19, 29, 0.84) 21.37%, rgba(1, 35, 52, 0.794031) 41.45%, rgba(4, 82, 121, 0.66) 100%);
     background: linear-gradient(156.49deg, rgba(0, 19, 29, 0.84) 0.54%, rgba(0, 19, 29, 0.84) 21.37%, rgba(1, 35, 52, 0.794031) 41.45%, rgba(4, 82, 121, 0.66) 100%);
@@ -1134,6 +1136,55 @@ form button {
     font-size: 12px;
     line-height: 14px;
     margin-bottom: 10px;
+}
+#qa_list {
+    max-height: calc(100vh - 500px);
+    overflow-y: scroll;
+    margin-bottom: 20px;
+}
+.modal-qa__question {
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.modal-qa__question__string {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 10px;
+}
+.modal-qa__question__text {
+    font-size: 16px;
+    line-height: 19px;
+    font-family: "Raleway-Bold", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+.modal-qa__question__image {
+    width: 19px;
+    height: 19px;
+    margin-right: 10px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.modal-qa__answer {
+    display: none;
+    margin-left: 29px;
+    font-size: 12px;
+    line-height: 14px;
+}
+.modal-qa__question.active .modal-qa__answer {
+    display: block;
+}
+.modal-qa__question.active .modal-qa__question__image {
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
 }
 
 #dynamic-book-button {
@@ -1169,3 +1220,26 @@ form button {
         -ms-transform: translateY(0%);
             transform: translateY(0%);
 }
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+  }
+  
+  
+  

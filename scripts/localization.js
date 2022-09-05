@@ -68,6 +68,9 @@ const langs = {
 
         "footer_title": "Contacts",
         "footer_socials": "Follow us on social media so you don't miss out on news",
+
+        "qa_text1": "If you have any further questions that we have not covered here, please feel free to send them via our contact form, by email to info@sailpalma.com, via WhatsApp or just call us at the phone number provided.",
+        "qa_text2": "It is our honour and pleasure to welcome you aboard the Steve Rogers. Our first priority is to make this dream tour a special experience for you.",
     },
     "de": {
         "nav_main": "Hauptseite",
@@ -138,6 +141,9 @@ const langs = {
         
         "footer_title": "Kontakte",
         "footer_socials": "Folgen Sie uns in den sozialen Medien, um keine Neuigkeiten zu verpassen",
+
+        "qa_text1": "Solltest Du weitere Fragen haben, die wir hier nicht berücksichtigt haben, so sende diese gerne über unser Kontaktformular oder per Mail an info@sailpalma.com.",
+        "qa_text2": "Uns ist es eine Ehre und Freude, Dich an Bord der Steve Rogers begrüßen zu dürfen und an erster Stelle steht für uns, diese Traum Tour für Dich zu einem besonderen Erlebnis zu machen.",
     },
     "es": {
         "nav_main": "Principal",
@@ -208,6 +214,9 @@ const langs = {
 
         "footer_title": "Contactos",
         "footer_socials": "Síguenos en las redes sociales para cualquier actualización extrañar",
+        
+        "qa_text1": "Si tiene alguna otra pregunta que no hayamos cubierto aquí, no dude en enviarla a través de nuestro formulario de contacto, por correo electrónico a info@sailpalma.com y, por supuesto, también por WhatsApp o llamándonos al número de teléfono indicado.",
+        "qa_text2": "Es un honor y un placer para nosotros darle la bienvenida a bordo del Steve Rogers, y nuestra primera prioridad es hacer de este viaje de ensueño una experiencia especial para usted.",
     }
 }
 
@@ -242,17 +251,13 @@ async function setLocale(newLocale) {
   const newTranslations = langs[newLocale]
 
   locale = newLocale;
+  const links = Array.from(document.querySelectorAll('.hero-header__first__locale'));
+  links.forEach(link => (link.textContent == locale) ? link.classList.add('active') : link.classList.remove('active') )
+
   translations = newTranslations;
   document.documentElement.lang = newLocale;
 
   translatePage();
-}
-
-// Retrieves translations JSON object for the given
-// locale over the network
-async function fetchTranslationsFor(newLocale) {
-  const response = await fetch(`../locale/${newLocale}.json`);
-  return await response.json();
 }
 
 // Replace the inner text of all elements with the
