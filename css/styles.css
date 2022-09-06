@@ -93,29 +93,6 @@ h4 {
     text-transform: uppercase;
 }
 
-.button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    background: #012435;
-    height: 60px;
-    border-radius: 60px;
-    border: none;
-    padding: 12px 0;
-    text-transform: uppercase;
-    text-align: center;
-    color: #FFFFFF;
-    cursor: pointer;
-}
-
 form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -221,6 +198,29 @@ form button {
     max-width: 1120px;
     width: 95%;
     margin: 0 auto;
+}
+
+.button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    background: #012435;
+    height: 60px;
+    border-radius: 60px;
+    border: none;
+    padding: 12px 0;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
 }
 
 .socials-block {
@@ -563,7 +563,7 @@ form button {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 80px;
+    min-height: 80px;
 }
 
 .jorney-description__first {
@@ -755,7 +755,7 @@ form button {
 .boat-text__list {
     margin-top: 40px;
     max-width: 405px;
-    height: 345px;
+    min-height: 345px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -853,8 +853,10 @@ form button {
 }
 
 .clients {
+    position: relative;
     overflow-x: hidden;
     margin-top: 130px;
+    min-height: 555px;
 }
 
 .clients-title {
@@ -863,7 +865,10 @@ form button {
 }
 
 .clients-content {
-    position: relative;
+    position: absolute;
+    top: 55px;
+    left: calc(50% - 870px);
+    width: 1740px;
     height: 500px;
 }
 .clients-slider {
@@ -1299,40 +1304,9 @@ background-color: #a8bbbf;
 
 
 @media (max-width: 1300px) {
-
     .hero-header__first__nav {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-    }
-
-    .cards-container {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-    }
-
-    .jorney-description {
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-columns: 1fr;
-    }
-    .jorney-description__second {
-        margin-top: 0;
-    }
-
-    .boat-container {
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr;
-    }
-    .boat-text {
-        margin-left: 0;
-    }
-    .boat-images {
-      margin: 0 auto 30px;
-    }
-    .boat-images__shadow {
-      top: 0;
-    }
-    .boat-images__img {
-      top: 10px;
     }
 }
 
@@ -1342,5 +1316,13 @@ background-color: #a8bbbf;
     }
     .hero-header__first .logo {
         display: none;
+    }
+    
+    .jorney-description {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+    }
+    .jorney-description__second {
+        margin-top: 0;
     }
 }
