@@ -2,13 +2,6 @@ function init() {
     const clients = document.querySelectorAll('.clients-slider__client');
 
     const shiftLeft = () => {
-      const allSlides = document.querySelectorAll(".clients-slider__client");
-      const previous = "1";
-      const current = "2";
-      const next = "3";
-
-
-
         const first = document.querySelector('.clients-slider__client[data-order="1"]');
         const second = document.querySelector('.clients-slider__client[data-order="2"]');
         const third = document.querySelector('.clients-slider__client[data-order="3"]');
