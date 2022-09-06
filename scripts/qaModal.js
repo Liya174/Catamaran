@@ -223,7 +223,6 @@ function init() {
         })
 
         const questionBlocks = document.querySelectorAll('.modal-qa__question');
-        console.log('questionBlocks: ', questionBlocks);
 
         Array.from(questionBlocks).forEach(questionBlock => questionBlock.addEventListener('click', onQuestionClick));
     }

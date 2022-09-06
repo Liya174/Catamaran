@@ -35,9 +35,7 @@ function init() {
 
     const onBookingSubmit = (event) => {
         event.preventDefault();
-        console.log('event: ', event);
         const formData = new FormData(bookingForm);
-        console.log('formData: ', formData);
 
         hideBookModal();
     }
