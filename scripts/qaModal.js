@@ -207,7 +207,6 @@ function init() {
     }
 
     const onQuestionClick = (event) => {
-        console.log('onQuestionClick: ', onQuestionClick);
         const question = event.currentTarget;
         question.classList.toggle('active');
     }

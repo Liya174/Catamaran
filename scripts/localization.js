@@ -62,9 +62,9 @@ const langs = {
         "client3_text": "First I was sceptical about turning my golf day into a sailing day... but as soon as we set sail from Palma, that was no longer an issue. You can't get enough of this view over the sea. Complete deceleration. The crew is competent and relaxed; I didn't miss a thing. Even dolphins crossed our path. What more could you want! Only question now: how to fit this new hobby into my everyday life. Thanks to the Skipper and Team and thanks to the Steve Rogers!",
         "client3_name": "Isabell E. from Berlin",
 
-        "feedback_title": "feedback",
+        "feedback_title": "Feedback",
         "feedback_decsription": "Ask us any question, write or place an order.\nOur managers will answer you as soon as possible.",
-        "feedback_btn": "feedback",
+        "feedback_btn": "Feedback",
 
         "footer_title": "Contacts",
         "footer_socials": "Follow us on social media so you don't miss out on news",
@@ -208,9 +208,9 @@ const langs = {
         "client3_text": "Al principio era escéptico sobre la posibilidad de convertir mi día de golf en un día de navegación... pero tan pronto como zarpamos de Palma, eso dejó de ser un problema. No te cansarás de ver esta vista sobre el mar. Desaceleración completa. La tripulación es competente y relajada; no eché en falta nada. Incluso los delfines se cruzaron en nuestro camino. ¿Qué más se puede pedir? La única pregunta ahora es: ¿cómo puedo encajar esta nueva afición en mi vida diaria? Gracias al patrón y al equipo y gracias Steve Rogers.",
         "client3_name": "Isabell E. from Berlin",
 
-        "feedback_title": "mensaje de vuelta",
+        "feedback_title": "Mensaje de vuelta",
         "feedback_decsription": "Háganos una pregunta, escríbanos o haga un pedido.\nNuestros gerentes le responderán lo antes posible.",
-        "feedback_btn": "retroalimentación",
+        "feedback_btn": "Retroalimentación",
 
         "footer_title": "Contactos",
         "footer_socials": "Síguenos en las redes sociales para cualquier actualización extrañar",
@@ -218,6 +218,24 @@ const langs = {
         "qa_text1": "Si tiene alguna otra pregunta que no hayamos cubierto aquí, no dude en enviarla a través de nuestro formulario de contacto, por correo electrónico a info@sailpalma.com y, por supuesto, también por WhatsApp o llamándonos al número de teléfono indicado.",
         "qa_text2": "Es un honor y un placer para nosotros darle la bienvenida a bordo del Steve Rogers, y nuestra primera prioridad es hacer de este viaje de ensueño una experiencia especial para usted.",
     }
+}
+
+const feedbackPhs = {
+  "en": {
+    "name": "Name",
+    "tel": "Tel",
+    "message": "Message",
+  },
+  "de": {
+    "name": "Name",
+    "tel": "Tel",
+    "message": "Botschaft",
+  },
+  "es": {
+    "name": "El Nombre",
+    "tel": "Tel",
+    "message": "Mensaje",
+  },
 }
 
 const defaultLocale = "en";
@@ -258,6 +276,15 @@ async function setLocale(newLocale) {
   document.documentElement.lang = newLocale;
 
   translatePage();
+  translateFeedbackPhs();
+}
+
+function translateFeedbackPhs() {
+  const placeholders = feedbackPhs[locale];
+
+  document.querySelector('#feedback-name').placeholder=`${placeholders['name']}...`;
+  document.querySelector('#feedback-tel').placeholder=`${placeholders['tel']}...`;
+  document.querySelector('#feedback-message').placeholder=`${placeholders['message']}...`;
 }
 
 // Replace the inner text of all elements with the

@@ -306,12 +306,12 @@
                 <span class="feedback-decription" data-i18n-key="feedback_decsription">
                     Ask us any question, write or place an order.<br>Our managers will answer you as soon as possible.
                 </span>
-                <form id="feedback-form" class="feedback-form" action="mailto:lusya-1992@mail.ru" method="post" enctype="text/plain">
+                <form id="feedback-form" class="feedback-form">
                     <div class="feedback-form__inputs">
-                        <input name="name" class="form-input" id="feedback-name" type="text" placeholder="Name..." required/>
-                        <input name="tel" id="feedback-tel" type="tel" placeholder="Tel..." required/>
+                        <input name="name" class="form-input" id="feedback-name" type="text" placeholder="Name..." />
+                        <input name="tel" id="feedback-tel" type="tel" placeholder="Tel..." />
                     </div>
-                    <textarea name="message" id="feedback-message" type="text" placeholder="Message..." required></textarea>
+                    <textarea name="message" id="feedback-message" type="text" placeholder="Message..." ></textarea>
                     <button type="submit" data-i18n-key="feedback_btn">feedback</button>
                 </form>
             </div>
@@ -337,7 +337,7 @@
                     </li>
                     <li class="footer-contacts__elem">
                         <img  class="footer-contacts__logo" src="./imgs/email.svg"/>
-                        <a href="mailto:info@sailpalma.com">info@sailpalma.com</a>
+                        <a class="footer-contacts__email" href="mailto:info@sailpalma.com">info@sailpalma.com</a>
                     </li>
                 </ul>
             </div>
