@@ -323,7 +323,7 @@ form button {
     right: 10px;
     bottom: 10px;
     background-color: rgba(217, 217, 217, 0.45);
-    border-radius: 20px; 
+    border-radius: 20px;
     z-index: 10;
 }
 
@@ -679,6 +679,7 @@ form button {
 
 .boat-images {
     position: relative;
+    max-width: 645px;
 }
 .boat-images__img {
     position: absolute;
@@ -875,20 +876,23 @@ form button {
     width: 560px;
     height: 100%;
 }
-.clients-slider__client.order1 {
+.clients-slider__client[data-order="1"] {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+            transform: translate(-50%) scale(0.8, 0.8);
 }
-.clients-slider__client.order2 {
+.clients-slider__client[data-order="2"] {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+            transform: translate(-50%);
 }
-.clients-slider__client.order3 {
+.clients-slider__client[data-order="3"] {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
+            transform: translate(-120%) scale(0.8, 0.8);
 }
 .clients-slider__client__card {
     position: absolute;
@@ -1247,7 +1251,7 @@ background-clip: content-box;
 background-color: #a8bbbf;
 }
 
-  
+
 @media (max-width: 1300px) {
 
     .hero-header__first__nav {
@@ -1274,6 +1278,15 @@ background-color: #a8bbbf;
     }
     .boat-text {
         margin-left: 0;
+    }
+    .boat-images {
+      margin: 0 auto 30px;
+    }
+    .boat-images__shadow {
+      top: 0;
+    }
+    .boat-images__img {
+      top: 10px;
     }
 }
 

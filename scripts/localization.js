@@ -134,11 +134,11 @@ const langs = {
         "client2_name": "Darren B. from Kapstadt",
         "client3_text": "Ich hätte nie gedacht, dass mir das Segeln so viel Freude machen würde. Mallorca von dieser Seite kennenzulernen war großartig. Einfach vom Boot aus ins Wasser zu springen und mit dem SUP drum herum ist echt besonders. Wir waren bei unserem Turn nur 10 Gäste an Bord und irgendwie passten wir auch alle zusammen. Wie ein Familienausflug mit netten Gesprächen, chillen wenn man wollte und leckeren Tapas und Drinks. Danke an die tolle Crew für den wirklich perfekten Urlaubstag!",
         "client3_name": "Isabell E. from Berlin",
-        
+
         "feedback_title": "Rückmeldung",
         "feedback_decsription": "Stellen Sie uns eine Frage, schreiben Sie uns oder geben Sie eine Bestellung auf.\nUnsere Manager werden Ihnen so schnell wie möglich antworten.",
         "feedback_btn": "Rückmeldung",
-        
+
         "footer_title": "Kontakte",
         "footer_socials": "Folgen Sie uns in den sozialen Medien, um keine Neuigkeiten zu verpassen",
 
@@ -214,7 +214,7 @@ const langs = {
 
         "footer_title": "Contactos",
         "footer_socials": "Síguenos en las redes sociales para cualquier actualización extrañar",
-        
+
         "qa_text1": "Si tiene alguna otra pregunta que no hayamos cubierto aquí, no dude en enviarla a través de nuestro formulario de contacto, por correo electrónico a info@sailpalma.com y, por supuesto, también por WhatsApp o llamándonos al número de teléfono indicado.",
         "qa_text2": "Es un honor y un placer para nosotros darle la bienvenida a bordo del Steve Rogers, y nuestra primera prioridad es hacer de este viaje de ensueño una experiencia especial para usted.",
     }
@@ -269,7 +269,7 @@ async function setLocale(newLocale) {
   const newTranslations = langs[newLocale]
 
   locale = newLocale;
-  const links = Array.from(document.querySelectorAll('.hero-header__first__locale'));
+  const links = document.querySelectorAll('.hero-header__first__locale');
   links.forEach(link => (link.textContent == locale) ? link.classList.add('active') : link.classList.remove('active') )
 
   translations = newTranslations;
@@ -316,7 +316,7 @@ function supportedOrDefault(locales) {
 }
 
 function bindLocaleSwitcher(initialValue) {
-  const langs = Array.from(document.querySelectorAll('.hero-header__first__locale'));
+  const langs = document.querySelectorAll('.hero-header__first__locale');
   const initial = langs.find(lang => lang.textContent == initialValue);
 
   initial.classList.add('active');

@@ -12,7 +12,7 @@ function init() {
     const hideBookModal = () => {
         modalBook.classList.remove('visible');
         bookingForm.reset();
-        Array.from(bookButtons).forEach(btn => {
+        bookButtons.forEach(btn => {
             btn.addEventListener('click', onBookButtonClick);
         })
         modalBook.removeEventListener('click', onDocumentClick);
@@ -20,10 +20,10 @@ function init() {
 
     const onBookButtonClick = () => {
         showBookModal();
-        Array.from(bookButtons).forEach(btn => {
+        bookButtons.forEach(btn => {
             btn.removeEventListener('click', onBookButtonClick);
         })
-        modalBook.addEventListener('click', onDocumentClick); 
+        modalBook.addEventListener('click', onDocumentClick);
     }
 
     const onDocumentClick = (event) => {
@@ -40,7 +40,7 @@ function init() {
         hideBookModal();
     }
 
-    Array.from(bookButtons).forEach(btn => {
+    bookButtons.forEach(btn => {
         btn.addEventListener('click', onBookButtonClick);
     })
 

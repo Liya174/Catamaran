@@ -194,14 +194,14 @@ function init() {
     const onQaButtonClick = () => {
         showQaModal();
         qaButton.removeEventListener('click', onQaButtonClick);
-        modalQA.addEventListener('click', onDocumentClick); 
+        modalQA.addEventListener('click', onDocumentClick);
     }
 
     const onDocumentClick = (event) => {
         const isOutside = !event.target.closest('.modal-qa');
         if (isOutside) {
             hideQaModal();
-            qaButton.addEventListener('click', onQaButtonClick); 
+            qaButton.addEventListener('click', onQaButtonClick);
             modalQA.removeEventListener('click', onDocumentClick);
         }
     }
@@ -224,7 +224,7 @@ function init() {
 
         const questionBlocks = document.querySelectorAll('.modal-qa__question');
 
-        Array.from(questionBlocks).forEach(questionBlock => questionBlock.addEventListener('click', onQuestionClick));
+        questionBlocks.forEach(questionBlock => questionBlock.addEventListener('click', onQuestionClick));
     }
 
     qaButton.addEventListener('click', onQaButtonClick);

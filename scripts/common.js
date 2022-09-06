@@ -1,7 +1,7 @@
 function init() {
     // shown card text when hover
     const cards = document.querySelectorAll('.cards-card');
-    
+
     const onCardHover = (event) => {
         const card = event.target.closest('.cards-card');
         card.querySelector('.cards-card__text').classList.add('active');
@@ -18,14 +18,14 @@ function init() {
         card.removeEventListener('mouseout', onCardOut);
     }
 
-    Array.from(cards).forEach(card => {
+    cards.forEach(card => {
         card.addEventListener('mouseover', onCardHover);
     })
 
 
     // shown text when scroll
     const entryShownElements = document.querySelectorAll('.entry-shown');
-    
+
     const onEntry = (entry) => {
       entry.forEach(change => {
         if (change.isIntersecting) {
@@ -40,7 +40,7 @@ function init() {
         observer.observe(elm);
     }
 
-    // toggle book button visibility 
+    // toggle book button visibility
     const onDocumentScroll = () => {
       const dynamicBookButton = document.querySelector('#dynamic-book-button');
       const isDynamicVisible = dynamicBookButton.classList.contains('active');
@@ -51,7 +51,7 @@ function init() {
       if(isStaticVisible && isDynamicVisible) {
         dynamicBookButton.classList.remove('active');
       }
-      
+
       if(!isStaticVisible && !isDynamicVisible) {
         dynamicBookButton.classList.add('active');
       }
@@ -80,11 +80,11 @@ function init() {
       const message = feedbackForm.querySelector('#feedback-message');
       const messagePh = message.placeholder.replace('...', '');
       if (message.value.length === 0) warnings.push(`${messagePh} is required. `);
-      
+
       if (warnings.length === 0) {
         const body = namePh + ": " + name.value + '%0D%0A' + telPh + ": " + tel.value  + '%0D%0A' + messagePh + ": " + message.value;
         const str = `mailto:${address}?subject=${subject}&body=${body}`;
-        
+
         name.value = '';
         tel.value = '';
         message.value = '';
@@ -92,7 +92,7 @@ function init() {
         location.href = str;
       } else {
         alert(warnings.join(''));
-      }      
+      }
     }
 
     feedbackForm.addEventListener('submit', onFeedbackSubmit);
