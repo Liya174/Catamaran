@@ -316,12 +316,12 @@ function supportedOrDefault(locales) {
 }
 
 function bindLocaleSwitcher(initialValue) {
-  const langs = document.querySelectorAll('.hero-header__first__locale');
-  const initial = langs.find(lang => lang.textContent == initialValue);
+  const languages = Array.from(document.querySelectorAll('.hero-header__first__locale'));
+  const initial = languages.find(lang => lang.textContent == initialValue);
 
   initial.classList.add('active');
 
-  langs.forEach(lang => {
+  languages.forEach(lang => {
     lang.addEventListener('click', () => {
         setLocale(lang.textContent);
     })

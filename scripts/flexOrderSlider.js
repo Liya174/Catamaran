@@ -29,14 +29,12 @@ function init() {
     }
 
     const onClientHover = (event) => {
-        console.log('onClientHover: ', onClientHover);
         clients.forEach(client => {
             client.removeEventListener('mouseover', onClientHover);
         })
 
         const client = event.target.closest('.clients-slider__client');
         const order = client.dataset.order;
-        console.log('order: ', order);
         if (order == 3) shiftLeft();
         if (order == 1) shiftRight();
 
