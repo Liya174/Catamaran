@@ -855,9 +855,7 @@ form button {
     height: 500px;
 }
 .clients-slider {
-    position: absolute;
-    top: 0;
-    left: calc(50% - 870px);
+    position: relative;
     width: 1740px;
     height: 500px;
     display: -webkit-box;
@@ -870,27 +868,59 @@ form button {
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin: 0 auto;
+    -webkit-perspective: 500px;
+            perspective: 500px;
 }
 .clients-slider__client {
-    position: relative;
+    height: 100%; 
     width: 560px;
-    height: 100%;
+    position: absolute;
+    -webkit-transition: 2s ease;
+    -o-transition: 2s ease;
+    transition: 2s ease;
 }
 .clients-slider__client[data-order="1"] {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    left: 280px;
+    -webkit-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+            transform: translate(-50%);
+    z-index: 1;
+    opacity: 1;
 }
 .clients-slider__client[data-order="2"] {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    left: 860px;
+    -webkit-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+            transform: translate(-50%);
+    z-index: 3;
+    opacity: 1;
 }
 .clients-slider__client[data-order="3"] {
+    left: 1840px;
+    -webkit-transform: translate(-120%);
+        -ms-transform: translate(-120%);
+            transform: translate(-120%);
+    z-index: 2;
+    opacity: 1;
+}
+.clients-slider__client:nth-child(2) {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
 }
+  
+.clients-slider__client:nth-child(1) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+}
+  
+.clients-slider__client:nth-child(3) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+}
+
 .clients-slider__client__card {
     position: absolute;
     left: 0;
@@ -942,18 +972,25 @@ form button {
 }
 .clients-slider__client__img {
     position: absolute;
-    top: 30px;
-    left: calc(50% - 130px);
+    top: -35px;
+    left: calc(50% - 125px);
     border-radius: 10px;
     width: 250px;
     height: 215px;
     -o-object-fit: cover;
        object-fit: cover;
+    -webkit-transition: 2s ease;
+    -o-transition: 2s ease;
+    transition: 2s ease;
 }
-.clients-slider__client.order2 .clients-slider__client__img {
-    top: 15px;
+.clients-slider__client[data-order="2"] .clients-slider__client__img {
+    top: -50px;
+    left: calc(50% - 135px);
     width: 270px;
     height: 230px;
+    -webkit-transition: 2s ease;
+    -o-transition: 2s ease;
+    transition: 2s ease;
 }
 .clients-slider__client__card__name {
     margin-top: auto;
