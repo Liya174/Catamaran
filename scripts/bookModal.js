@@ -1,50 +1,48 @@
-function init() {
-    const CHECKGRONT_CREATE_URL = '/api/3.0/booking/create';
+// function init() {
+//     const modalBook = document.querySelector('#modal-book');
+//     const bookButtons = document.querySelectorAll('.book-button');
+//     const bookingForm = document.querySelector('#book-form');
 
-    const modalBook = document.querySelector('#modal-book');
-    const bookButtons = document.querySelectorAll('.book-button');
-    const bookingForm = document.querySelector('#book-form');
+//     const showBookModal = () => {
+//         modalBook.classList.add('visible');
+//     }
 
-    const showBookModal = () => {
-        modalBook.classList.add('visible');
-    }
+//     const hideBookModal = () => {
+//         modalBook.classList.remove('visible');
+//         bookingForm.reset();
+//         bookButtons.forEach(btn => {
+//             btn.addEventListener('click', onBookButtonClick);
+//         })
+//         modalBook.removeEventListener('click', onDocumentClick);
+//     }
 
-    const hideBookModal = () => {
-        modalBook.classList.remove('visible');
-        bookingForm.reset();
-        bookButtons.forEach(btn => {
-            btn.addEventListener('click', onBookButtonClick);
-        })
-        modalBook.removeEventListener('click', onDocumentClick);
-    }
+//     const onBookButtonClick = () => {
+//         showBookModal();
+//         bookButtons.forEach(btn => {
+//             btn.removeEventListener('click', onBookButtonClick);
+//         })
+//         modalBook.addEventListener('click', onDocumentClick);
+//     }
 
-    const onBookButtonClick = () => {
-        showBookModal();
-        bookButtons.forEach(btn => {
-            btn.removeEventListener('click', onBookButtonClick);
-        })
-        modalBook.addEventListener('click', onDocumentClick);
-    }
+//     const onDocumentClick = (event) => {
+//         const isOutside = !event.target.closest('.modal-book');
+//         if (isOutside) {
+//             hideBookModal();
+//         }
+//     }
 
-    const onDocumentClick = (event) => {
-        const isOutside = !event.target.closest('.modal-book');
-        if (isOutside) {
-            hideBookModal();
-        }
-    }
+//     const onBookingSubmit = (event) => {
+//         event.preventDefault();
+//         const formData = new FormData(bookingForm);
 
-    const onBookingSubmit = (event) => {
-        event.preventDefault();
-        const formData = new FormData(bookingForm);
+//         hideBookModal();
+//     }
 
-        hideBookModal();
-    }
+//     bookButtons.forEach(btn => {
+//         btn.addEventListener('click', onBookButtonClick);
+//     })
 
-    bookButtons.forEach(btn => {
-        btn.addEventListener('click', onBookButtonClick);
-    })
+//     bookingForm.addEventListener('submit', onBookingSubmit);
+// };
 
-    bookingForm.addEventListener('submit', onBookingSubmit);
-};
-
-document.addEventListener('DOMContentLoaded', init)
+// document.addEventListener('DOMContentLoaded', init)
