@@ -1200,7 +1200,7 @@ form button {
 }
 #qa_list {
     max-height: calc(100vh - 500px);
-    overflow-y: scroll;
+    overflow-y: auto;
     margin-bottom: 20px;
 }
 .modal-qa__question {
