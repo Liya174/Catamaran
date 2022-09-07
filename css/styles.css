@@ -377,6 +377,7 @@ form button {
 .hero-header__first {
     width: 100%;
     display: grid;
+    grid-gap: 15px;
     grid-template-columns: 160px 1fr 175px;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -889,7 +890,7 @@ form button {
             perspective: 500px;
 }
 .clients-slider__client {
-    height: 100%; 
+    height: 100%;
     width: 560px;
     position: absolute;
     -webkit-transition: 2s ease;
@@ -925,13 +926,13 @@ form button {
         -ms-flex-order: 3;
             order: 3;
 }
-  
+
 .clients-slider__client:nth-child(1) {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
 }
-  
+
 .clients-slider__client:nth-child(3) {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -1282,6 +1283,49 @@ form button {
             transform: translateY(0%);
 }
 
+/* don't visible on desktop */
+.hero-mobile-sidebar {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: -3%;
+  height: 100%;
+  min-width: 375px;
+  background: #012435;
+  border-radius: 10px;
+  z-index: 1000;
+  padding: 15px 15px 94px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-mobile-sidebar.visible {
+  display: block;
+}
+.hero-mobile-sidebar__close-icon {
+  align-self: flex-end;
+  width: 30px;
+  height: 30px;
+}
+
+.mobile-burger {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-burger__line {
+  width: 30px;
+  height: 3px;
+  background-color: #FFFFFF;
+  border-radius: 3px;
+  margin: 2px 0;
+}
+
 /* custom scrollbar */
 ::-webkit-scrollbar {
     width: 20px;
@@ -1302,7 +1346,31 @@ background-clip: content-box;
 background-color: #a8bbbf;
 }
 
+@media (max-width: 992px) {
+  h1 {
+    font-size: 50px;
+  }
 
+  h3 {
+    font-size: 25px;
+  }
+
+  .hero-header__first {
+    grid-template-columns: 40px 1fr 65px;
+  }
+  .hero-header__first__nav {
+    display: none;
+  }
+  .socials-block {
+    display: none;
+  }
+  .hero-header__third__contacts {
+    margin-right: 0;
+    justify-content: flex-end;
+  }
+}
+
+/*
 @media (max-width: 1300px) {
     .hero-header__first__nav {
         -ms-flex-wrap: wrap;
@@ -1317,7 +1385,7 @@ background-color: #a8bbbf;
     .hero-header__first .logo {
         display: none;
     }
-    
+
     .jorney-description {
         grid-template-rows: repeat(2, 1fr);
         grid-template-columns: 1fr;
@@ -1325,4 +1393,4 @@ background-color: #a8bbbf;
     .jorney-description__second {
         margin-top: 0;
     }
-}
+} */

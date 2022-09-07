@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catamaran</title>
-    <link rel="stylesheet" href="css/styles.min.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
     <link rel="shortcut icon" type="image/jpg" href="./imgs/favicon.svg"/>
     <script src="./scripts/backgroundSlider.min.js" defer></script>
     <script src="./scripts/common.min.js" defer></script>
     <script src="./scripts/flexOrderSlider.min.js" defer></script>
     <script src="./scripts/qaModal.min.js" defer></script>
     <script src="./scripts/localization.min.js" defer></script>
+    <script src="./scripts/mobileSidebar.js" defer></script>
 </head>
 <body>
     <main>
@@ -22,6 +23,11 @@
             <div class="container hero-container">
                 <div class="hero-header">
                     <div class="hero-header__first">
+                        <div class="mobile-burger" id="#mobile-burger">
+                          <div class="mobile-burger__line"></div>
+                          <div class="mobile-burger__line"></div>
+                          <div class="mobile-burger__line"></div>
+                        </div>
                         <div class="logo">
                             <span class="logo__name">S.Y Steve Rogers</span>
                             <span class="logo__company">Sailing Catamaran</span>
@@ -63,6 +69,9 @@
                 </a>
                 <div class="hero-text" data-i18n-key="hero_text">
                     Wide open spaces, sun, sea, wind and crystal clear water. Experience the feeling of freedom under the glitter of white sails!
+                </div>
+                <div class="hero-mobile-sidebar">
+                  <ims class="hero-mobile-sidebar__close-icon" src="./imgs/close.svg">
                 </div>
             </div>
         </section>
@@ -347,9 +356,9 @@
             </div>
         </div>
     </footer>
-    
+
     <!-- Book modal don't need now -->
-    <!-- 
+    <!--
     <div class="modal" id="modal-book">
         <div class="modal-container modal-book">
             <h2 class="modal-book-title">Book form</h2>
@@ -375,7 +384,7 @@
             </form>
         </div>
     </div>
-    --> 
+    -->
 
     <div class="modal" id="modal-qa">
         <div class="modal-container modal-qa-container">
