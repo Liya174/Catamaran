@@ -178,7 +178,8 @@ const data = {
 
 function init() {
     const modalQA = document.querySelector('#modal-qa');
-    const qaButton = document.querySelector('.qa-button');
+    const qaButtons = document.querySelectorAll('.qa-button');
+    console.log('qaButtons: ', qaButtons);
     const qaList = document.querySelector('#qa_list');
 
     const showQaModal = () => {
@@ -193,7 +194,7 @@ function init() {
 
     const onQaButtonClick = () => {
         showQaModal();
-        qaButton.removeEventListener('click', onQaButtonClick);
+        qaButtons.forEach(qaButton => qaButton.removeEventListener('click', onQaButtonClick));
         modalQA.addEventListener('click', onDocumentClick);
     }
 
@@ -201,7 +202,7 @@ function init() {
         const isOutside = !event.target.closest('.modal-qa');
         if (isOutside) {
             hideQaModal();
-            qaButton.addEventListener('click', onQaButtonClick);
+            qaButtons.forEach(qaButton => qaButton.addEventListener('click', onQaButtonClick));
             modalQA.removeEventListener('click', onDocumentClick);
         }
     }
@@ -227,7 +228,7 @@ function init() {
         questionBlocks.forEach(questionBlock => questionBlock.addEventListener('click', onQuestionClick));
     }
 
-    qaButton.addEventListener('click', onQaButtonClick);
+    qaButtons.forEach(qaButton => qaButton.addEventListener('click', onQaButtonClick));
 };
 
 document.addEventListener('DOMContentLoaded', init)

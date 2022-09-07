@@ -10,7 +10,7 @@
     <script src="./scripts/backgroundSlider.min.js" defer></script>
     <script src="./scripts/common.min.js" defer></script>
     <script src="./scripts/flexOrderSlider.min.js" defer></script>
-    <script src="./scripts/qaModal.min.js" defer></script>
+    <script src="./scripts/qaModal.js" defer></script>
     <script src="./scripts/localization.min.js" defer></script>
     <script src="./scripts/mobileSidebar.js" defer></script>
 </head>
@@ -41,7 +41,7 @@
                             <div class="hero-header__first__nav-link qa-button" data-i18n-key="nav_qa">Q&A</div>
                         </div>
                         <div class="hero-header__first__left">
-                            <div class="socials-block">
+                            <div class="socials-block" id="desktop-socials">
                                 <a class="socials-block__social" href="https://www.instagram.com/p/CiKfVs1MC4C/?igshid=YmMyMTA2M2Y=" target="_blank"><img src="./imgs/insta.svg"/></a>
                                 <a class="socials-block__social" href="#"><img src="./imgs/fb.svg"/></a>
                             </div>
@@ -55,7 +55,7 @@
                     <div class="hero-header__second"></div>
                     <div class="hero-header__third">
                         <a href="https://wa.me/+491702886984" class="hero-header__third__contacts">
-                            <img  class="hero-header__third__contact-logo" src="./imgs/wa.svg"/>
+                            <img class="hero-header__third__contact-logo" src="./imgs/wa.svg"/>
                             <span>+49 170 288 69 84</span>
                         </a>
                     </div>
@@ -70,8 +70,20 @@
                 <div class="hero-text" data-i18n-key="hero_text">
                     Wide open spaces, sun, sea, wind and crystal clear water. Experience the feeling of freedom under the glitter of white sails!
                 </div>
-                <div class="hero-mobile-sidebar">
-                  <ims class="hero-mobile-sidebar__close-icon" src="./imgs/close.svg">
+            </div>
+            <div class="hero-mobile-sidebar">
+                <img class="hero-mobile-sidebar__close-icon" src="./imgs/close.svg" />
+                <div class="mobile-hero-header__nav">
+                    <a class="mobile-hero-header__nav-link" href="#main" data-i18n-key="nav_main">Main</a>
+                    <a class="mobile-hero-header__nav-link" href="#tour" data-i18n-key="nav_tour">Tour</a>
+                    <a class="mobile-hero-header__nav-link" href="#our_boat" data-i18n-key="nav_boat">Our Boat</a>
+                    <a class="mobile-hero-header__nav-link" href="#feedback" data-i18n-key="nav_feedback">Feedback</a>
+                    <a class="mobile-hero-header__nav-link" href="#contacts" data-i18n-key="nav_contacts">Contacts</a>
+                    <div class="mobile-hero-header__nav-link qa-button" data-i18n-key="nav_qa">Q&A</div>
+                </div>
+                <div class="socials-block" id="mobile-socials">
+                    <a class="socials-block__social" href="https://www.instagram.com/p/CiKfVs1MC4C/?igshid=YmMyMTA2M2Y=" target="_blank"><img src="./imgs/insta.svg"/></a>
+                    <a class="socials-block__social" href="#"><img src="./imgs/fb.svg"/></a>
                 </div>
             </div>
         </section>
@@ -210,6 +222,11 @@
                         </li>
                     </ul>
                 </div>
+            </div>
+            <div class="mobile-boat-images__text entry-shown" data-i18n-key="boat_hover">
+                Meeting point: La Lonja Marina - one of the most beautiful marinas in Mallorca.The marina is in the centre of Palma between Santa Catalina and La Lonja and only 5 minutes from the cathedral.
+                <br><br>
+                When everyone is on board: get out of the harbour and... hoist the sails! Bye the way... sometimes we might have to add the arabian wind.
             </div>
         </section>
         <section class="people">
