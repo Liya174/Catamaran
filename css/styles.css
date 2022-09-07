@@ -590,6 +590,7 @@ form button {
 .cards {
     min-height: 485px;
     margin: -70px 0 100px;
+    overflow-x: hidden;
 }
 
 .cards-container {
@@ -1317,12 +1318,10 @@ form button {
 }
 
 .mobile-burger {
+    display: none;
     cursor: pointer;
     width: 40px;
     height: 40px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1410,13 +1409,20 @@ form button {
     h1 {
         font-size: 50px;
     }
-
+    h2{
+        font-size: 20px;
+    }    
     h3 {
         font-size: 25px;
     }
+    .mobile-burger {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
 
     .container {
-        max-width: 90%;
+        max-width: 95%;
     }
     .hero-header__first {
         grid-template-columns: 40px 1fr 65px;
@@ -1441,6 +1447,7 @@ form button {
     }
     .jorney-title {
         font-size: 20px;
+        margin-top: 20px;
     }
     .jorney-description {
         font-size: 12px;
@@ -1452,6 +1459,7 @@ form button {
     .jorney-center {
         font-size: 14px;
         line-height: 1;
+        margin-bottom: 150px;
     }
     .boat-container {
         grid-template-columns: 1fr 1fr;
@@ -1566,29 +1574,94 @@ form button {
                 flex-direction: column-reverse;
         gap: 20px;   
     }
-}
-
-/*
-@media (max-width: 1300px) {
-    .hero-header__first__nav {
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+    .footer-contacts h3 {
+        font-size: 29px;
+    }
+    .cards {
+        margin: -140px 0 100px;
     }
 }
 
-@media (max-width: 800px) {
-    .hero-header__first {
-        grid-template-columns: 1fr 175px;
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }  
+    h2{
+        font-size: 16px;
+    }    
+    h3 {
+        font-size: 20px;
     }
-    .hero-header__first .logo {
+    .hero-text {
+        font-size: 16px;
+        height: auto;
+        margin: auto 10px 10px auto;
+    }
+    .jorney {
+        min-height: auto;
+    }
+    .jorney-title {
+        font-size: 16px;
+    }
+    .jorney-description {
+        line-height: 1;
+    }
+    .jorney-center {
+        font-size: 12px;
+        margin-bottom: 150px;
+    }
+    .jorney-description__first,
+    .jorney-description__second {
+        min-height: auto;
+    }
+    .boat-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 70px;
+    }
+    .boat-images {
+        max-width: none;
+        height: auto;
+    }
+    .mobile-boat-images__text {
         display: none;
     }
-
-    .jorney-description {
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-columns: 1fr;
+    .boat-images__img {
+        position: static;
     }
-    .jorney-description__second {
-        margin-top: 0;
+    .boat-images__text {
+        display: block;
+        top: calc(100% - 55px);
+        left: calc(50% - 205px);
     }
-} */
+    .boat-text {
+        margin: 0 0 50px;
+    }
+    .boat-text__subtitle {
+        max-width: 100%;
+    }
+    .boat-text__list {
+        max-width: 100%;
+    }
+    .feedback {
+        margin-bottom: 50px;
+    }
+    .feedback-form button {
+        margin-top: 33px;
+    }
+    .feedback-title {
+        font-size: 16px;
+    }
+    .footer-container {
+        max-width: 85%;
+    }
+    .footer-contacts h3 {
+        font-size: 29px;
+    }
+}
+}
