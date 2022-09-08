@@ -1669,6 +1669,15 @@ form button {
     .footer-contacts h3 {
         font-size: 29px;
     }
+    .modal-qa {
+        padding: 30px 24px;
+    }
+    .modal-qa__title {
+      margin-bottom: 20px;
+    }
+    .modal-qa__question__text {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 570px) {
