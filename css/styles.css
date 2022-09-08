@@ -598,9 +598,17 @@ form button {
     display: grid;
     grid-template: 1fr / repeat(3, 1fr);
     grid-gap: 20px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+.cards-container::-webkit-scrollbar {
+  display: none;
 }
 
 .cards-card {
+    white-space: initial;
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
