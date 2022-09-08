@@ -718,7 +718,7 @@ form button {
     left: 135px;
     padding: 10px;
     max-width: 410px;
-    height: 120px;
+    min-height: 120px;
     background: rgba(255, 255, 255, 0.8);
     -webkit-box-shadow: 3px 7px 15px 3px rgba(0, 0, 0, 0.15);
             box-shadow: 3px 7px 15px 3px rgba(0, 0, 0, 0.15);
@@ -1625,7 +1625,7 @@ form button {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-        gap: 70px;
+        gap: 100px;
     }
     .boat-images {
         max-width: none;
