@@ -896,8 +896,16 @@ form button {
     margin: 0 auto;
     -webkit-perspective: 500px;
             perspective: 500px;
+    /* overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+.clients-slider::-webkit-scrollbar {
+  display: none; */
 }
 .clients-slider__client {
+    /* white-space: initial; */
     height: 100%;
     width: 560px;
     position: absolute;
@@ -1505,6 +1513,10 @@ form button {
     }
     .mobile-boat-images__text {
         display: block;
+    }
+    .cards-container {
+      max-width: 100%;
+      width: 100%;
     }
     .people-container {
         grid-template: repeat(2, 1fr) / 1fr;
