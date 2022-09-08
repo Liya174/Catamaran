@@ -896,16 +896,8 @@ form button {
     margin: 0 auto;
     -webkit-perspective: 500px;
             perspective: 500px;
-    /* overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
-}
-.clients-slider::-webkit-scrollbar {
-  display: none; */
 }
 .clients-slider__client {
-    /* white-space: initial; */
     height: 100%;
     width: 560px;
     position: absolute;
@@ -1076,7 +1068,7 @@ form button {
 }
 
 .footer {
-    height: 264px;
+    min-height: 264px;
     background: #00131D;
     border-radius: 10px 10px 0px 0px;
     color: #FFFFFF;
@@ -1603,14 +1595,36 @@ form button {
     .cards {
         margin: -140px 0 100px;
     }
+    .clients-content {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 100%;
+    }
+    .clients-slider {
+        width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+    }
+    .clients-slider::-webkit-scrollbar {
+      display: none;
+    }
+    .clients-slider__client {
+        white-space: initial;
+    }
+    .clients-slider__client[data-order="2"] .clients-slider__client__img {
+        top: -35px;
+        left: calc(50% - 125px);
+        width: 250px;
+        height: 215px;
+    }
 }
 
 @media (max-width: 768px) {
     h1 {
         font-size: 40px;
-    }
-    h2{
-        font-size: 16px;
     }
     h3 {
         font-size: 20px;
