@@ -22,6 +22,9 @@ function init() {
     }
 
     const onClientHover = (event) => {
+
+        if (window.innerWidth < 992) return;
+
         clients.forEach(client => {
             client.removeEventListener('mouseover', onClientHover);
         })

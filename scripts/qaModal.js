@@ -179,7 +179,6 @@ const data = {
 function init() {
     const modalQA = document.querySelector('#modal-qa');
     const qaButtons = document.querySelectorAll('.qa-button');
-    console.log('qaButtons: ', qaButtons);
     const qaList = document.querySelector('#qa_list');
 
     const showQaModal = () => {

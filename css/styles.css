@@ -812,6 +812,7 @@ form button {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    gap: 10px;
 }
 .people-person:first-child {
     margin-top: 70px;
@@ -846,6 +847,7 @@ form button {
     font-size: 16px;
     line-height: 19px;
     color: #000000;
+    text-align: center;
 }
 .people-person__text {
     max-width: 360px;
@@ -1712,9 +1714,22 @@ form button {
     .modal-qa__question__text {
         font-size: 14px;
     }
+    #dynamic-book-button {
+        right: 25px;
+        bottom: 25px;
+    }
 }
 
 @media (max-width: 570px) {
+    h3 {
+        font-size: 16px;
+    }
+
+    .hero-title__main {
+        line-height: 1.3;
+        margin-bottom: 50px;
+    }
+    
     .people-person {
       gap: 20px;
     }
