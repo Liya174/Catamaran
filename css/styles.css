@@ -544,6 +544,7 @@ form button {
     line-height: 35px;
     letter-spacing: 0.3em;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .jorney-description {
@@ -716,7 +717,7 @@ form button {
     top: 496px;
     left: 135px;
     padding: 10px;
-    width: 410px;
+    max-width: 410px;
     height: 120px;
     background: rgba(255, 255, 255, 0.8);
     -webkit-box-shadow: 3px 7px 15px 3px rgba(0, 0, 0, 0.15);
@@ -1120,7 +1121,7 @@ form button {
     top: 0;
     left: 0;
     display: none;
-    width: 100vw;
+    width: calc(100vw - (100vw - 100%));;
     height: 100vh;
     z-index: 1000;
 }
@@ -1173,7 +1174,8 @@ form button {
 
 .modal-qa-container {
     max-height: calc(100vh - 225px);
-    width: 930px;
+    max-width: 930px;
+    width: 95%;
     background-color: #FFFFFF;
     border-radius: 50px;
     color: #FFFFFF;
@@ -1637,8 +1639,11 @@ form button {
     }
     .boat-images__text {
         display: block;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
         top: calc(100% - 55px);
-        left: calc(50% - 205px);
     }
     .boat-text {
         margin: 0 0 50px;
